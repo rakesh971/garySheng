@@ -765,7 +765,7 @@ export default function Home() {
 									<div className={styles.image_icons}>
 										<Link href="https://twitter.com/">
 											<a>
-											<img src ="/assets/images/623978_506580.webp"/>
+												<img src ="/assets/images/623978_506580.webp"/>
 											</a>
 										</Link>
 										
@@ -774,7 +774,6 @@ export default function Home() {
 										<Link href="https://www.linkedin.com/signup">
 											<a>
 												<img src ="/assets/images/svvszaufolhr4jkwl7vz.webp"/>
-												
 											</a>
 										</Link>
 									</div>
