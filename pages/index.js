@@ -752,7 +752,7 @@ export default function Home() {
 											Twitter
 										</a>
 									</Link>
-									and 
+										and 
 									<Link href="">
 										<a>
 											LinkedIn
