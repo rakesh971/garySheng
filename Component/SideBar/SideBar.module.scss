@@ -1,0 +1,207 @@
+@import '../../styles/_mixin.scss';
+
+.header{
+
+    .hamberg{
+        .hamberg_menu{
+            top: 36px;
+            left: 70px;
+            width: 50px;
+            height: 50px;
+            z-index: 999;
+            padding: 10px;
+            cursor: pointer;
+            position: fixed;
+            background-color: transparent;
+            border: none;
+            border-radius: 0px;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include sm{
+                left:6px;
+                top:16px;
+            }
+            span{
+                background-color: #245078;
+                height: 4px;
+                width: 26px;
+                position: absolute;
+                display: inline-block;
+                transition: all .25s ease-in-out;
+
+                &:nth-child(1){
+                    top:8px;
+                    transform: rotate(0deg);
+                }
+
+                &:nth-child(2){
+                    top:16px;
+                }
+
+                &:nth-child(3){
+                    top:24px;
+                    transform: rotate(0deg);
+                }
+            }
+        }
+
+        .active{
+            position: relative;
+            background: none;
+            border: none;
+            transition: all .25s ease-in-out;
+            top: 36px;
+            left: 70px;
+            width: 26px;
+            height: 18px;
+            z-index: 999;
+            padding: 10px;
+            cursor: pointer;
+            position: fixed;
+            
+            span{
+                display: block;
+                width: 26px;
+                height: 4px;
+                left: 22px;
+                margin-left: -9px;
+                position: absolute;
+                background: #fff;
+                transform-origin: left center;
+                transition: all .25s ease-in-out;
+
+                &:nth-child(1){
+                    transform: rotate(45deg);
+                    top:6px;
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                    width: 0%;
+                }
+                &:nth-child(3){
+                    top:24px;
+                    transform: rotate(-45deg)
+                }
+            }
+        }
+    }
+}
+
+.sidebar{
+    top: 0px;
+    left: -260px;
+    width: 260px;
+    height: 100%;
+    z-index: 555;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition:  0.5s ease-in-out;
+    .sidebar_wrapper{
+
+        .sidebar_info{
+            position: absolute;
+            left: 70px;
+            top: 125px;
+
+            ul{
+                li{
+                    margin-bottom: 10px;
+                    a{
+                        color: #FFF;
+                        font-size: 24px;
+                        font-family: 'Nanum Gothic', sans-serif;
+                        text-transform: capitalize;
+
+                        svg{
+                            fill:#fff
+                        }
+                    }
+                }
+            }
+        }
+
+        .sidebar_bottom{
+            position: absolute;
+            bottom: 92px;
+            width: 150px;
+            height: 33px;
+            left: 70px;
+            cursor: pointer;
+            
+            p{
+                color: #FFF;
+                font-size: 18px;
+                font-family: 'Noto Sans TC';
+                text-transform: capitalize;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+
+                svg{
+                    fill: #fff;
+                    font-size: 32px;
+                    margin-right: 6px;
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+
+    &.sidebar_hidden{
+        left: 0px;
+
+        .sidebar_wrapper{
+
+            .sidebar_info{
+                position: absolute;
+                left: 70px;
+                top: 125px;
+
+                ul{
+                    li{
+                        margin-bottom: 10px;
+                        a{
+                            color: #FFF;
+                            font-size: 24px;
+                            font-family: 'Nanum Gothic', sans-serif;
+                            text-transform: capitalize;
+
+                            svg{
+                                fill:#fff
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sidebar_bottom{
+                position: absolute;
+                bottom: 92px;
+                width: 150px;
+                height: 33px;
+                left: 70px;
+                cursor: pointer;
+                
+                p{
+                    color: #FFF;
+                    font-size: 18px;
+                    font-family: 'Noto Sans TC';
+                    text-transform: capitalize;
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+
+                    svg{
+                        fill: #fff;
+                        font-size: 32px;
+                        margin-right: 6px;
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+    }
+}

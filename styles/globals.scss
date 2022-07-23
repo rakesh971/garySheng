@@ -1,0 +1,168 @@
+@import './_mixin';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden !important;
+        scroll-behavior: smooth;
+        font-family: $primaryFont;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+
+        p,
+        a,
+        ul li {
+            margin: 0;
+        }
+
+        input,
+        button,
+        textarea,
+        label {
+            margin-bottom: 0;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .btn:active,
+        .btn:focus,
+        .form-control:active,
+        .form-control:focus {
+            box-shadow: none;
+        }
+
+        button:focus {
+            outline: 0;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .btn {
+            cursor: pointer;
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            appearance: none;
+            margin: 0;
+        }
+    }
+
+    svg {
+        fill: #333;
+    }
+}
+
+.btn {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+
+    &:focus {
+        outline: 0;
+        border: 0;
+        box-shadow: none;
+    }
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    display: block;
+}
+
+.form-check {
+    display: flex;
+
+    input {
+        margin-right: 6px;
+        margin-top: 4px;
+    }
+
+    label {
+        line-height: unset;
+    }
+}
+
+.section_title {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+}
+
+.marg_30 {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.contain{
+    width: 1056px;
+    margin: 0 auto;
+
+    @include tab{ 
+        width: 656px;
+        margin: 0 auto;
+    }
+
+    @include mobile{
+        width: 456px;
+        margin: 0 auto;
+        padding: 0px 12px;
+    }
+    @include xs {
+        width:320px;
+        margin: 0 auto;
+    }
+
+}
