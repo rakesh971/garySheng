@@ -127,7 +127,7 @@
 
 		.main_block{
 
-			.content{
+			.Volunteering{
 				.journey_block{
 					padding: 80px 0px;
 
@@ -296,6 +296,249 @@
 										.location{
 
 											p{
+												// font-weight: 700;
+												font-family: 'Mukta';
+											}
+										}
+
+										.info{
+
+											p{
+												font-size: 15px;
+												font-family: 'Roboto';
+												margin-top: 18px;
+												font-weight: 400;
+												line-height: 22px;
+
+												a{
+													color: #37c;
+													font-weight: 500;
+													padding-left: 4px;
+													text-decoration: underline !important;
+												}
+											}
+											ul{
+												margin: 15px 0px;
+												padding-left: 30px;
+
+												li{
+													font-style: italic;
+													font-size: 15px;
+													font-weight: 500;
+													line-height: 22px;
+													list-style-type: disc;
+													font-family: 'Roboto';
+
+													a{
+														color: #37c;
+														font-weight: 500;
+														padding-left: 4px;
+														text-decoration: underline !important;
+													}
+												}
+											}
+
+											.movement{
+												text-align: center;
+												margin-top: 15px;
+
+												@include xs{
+													margin-bottom: 35px;
+												}
+						
+												.movement_text{
+													font-size: 16px;
+													font-weight: 700;
+													font-family: 'Roboto';
+													padding: 12px 18px;
+													background-color: #1b232b;
+													border-radius: 999px;
+													color: #fff;
+													text-align: center;
+													display: inline-block;
+												}
+						
+											}
+										}
+									}
+								}
+							}
+
+						}
+					}
+				}
+			}
+
+			.content{
+				.journey_block{
+					padding: 80px 0px;
+
+					@include sm{
+						padding: 40px 0px;
+					}
+
+					.details{
+						display: flex;
+						justify-content: center;
+
+						h2{
+							color: #333;
+							font-size: 32px;
+							font-weight: 700;
+							position: relative;
+							text-align: center;
+							margin: 0px;
+							display: inline-block;
+							font-family: 'Jost', sans-serif;
+
+							@include mobile{
+								margin-bottom: 30px;
+							}
+
+
+							&::before{
+								content: "";
+								position: absolute;
+								height: 2px;
+								width: 80px;
+								margin: 0 10px;
+								display: inline-block;
+								background-color: #333;
+								right: 100%;
+								top:50%;
+								
+								@include mobile{
+
+									content: "";
+									position: absolute;
+									height: 2px;
+									width: 80px;
+									margin: 0 10px;
+									display: inline-block;
+									background-color: #333;
+									bottom: -12%;
+									top:inherit;
+									right:inherit;
+									transform: translate(-50%,-50%);
+									left: 45%;
+								}
+							}
+
+							&::after{
+								content: "";
+								position: absolute;
+								height: 2px;
+								width: 80px;
+								margin: 0 10px;
+								display: inline-block;
+								background-color: #333;
+								left: 100%;
+								top:50%;
+
+								@include mobile{
+									display: none;
+								}
+							}
+						}
+					}
+
+					.journey_info{
+					
+						.journey_sections{
+							display: flex;
+							padding: 0px 60px;
+							align-items: flex-start;
+							margin: 40px 0px;
+							margin-bottom: 0px;
+
+							@include mobile{
+								flex-direction: column;
+								justify-content: center;
+								padding: 0px;
+								align-items: center;
+								margin:20px 0px;
+							}
+							@include xs {
+								margin:20px  0px;
+							}
+
+							.unplugged_image{
+								flex: 0.3;
+								margin: 0px 14px;
+								justify-content: flex-end;
+								display: flex;
+
+								@include mobile{
+									flex: 1;
+									margin-bottom: 15px;
+								}
+		
+								img{
+									width:168px;
+									box-shadow: 0px 0px 11px 2px rgb(159 153 153 / 38%);
+    								border-radius: 22px;
+									object-fit: contain;
+									height: 136px;
+									padding: 4px;
+
+									@include mobile{
+										width: 100%;
+									}
+								}
+							}
+		
+							.journey_text{
+								flex: 1;
+								padding-left: 19px;
+								margin: 0px 14px;
+
+								@include mobile{
+									flex: 1;
+									padding-left: 0px;
+									margin: 0px;
+								}
+		
+								.basic_info{
+		
+									.header_text{
+										margin-bottom: 5px;
+		
+										h3{
+											color: #37c;
+											font-size: 24px;
+											font-weight: 400;
+											line-height: 34px;
+											font-family: 'Alegreya Sans', sans-serif;
+
+											a{
+												cursor: pointer;
+											}
+										}
+									}
+		
+									.founder_text{
+										margin-bottom: 5px;
+		
+										h6{
+											font-size: 16px;
+											color: #5e9516;
+											font-family: 'Didact Gothic';
+											font-weight: bold;
+											letter-spacing: 1px;
+
+											@include mobile{
+												font-size: 14px;
+											}
+
+										}
+									}
+
+									.details_block{
+										color: #50555c;
+
+										.location{
+
+											p{
 												font-weight: 700;
 												font-family: 'Mukta';
 											}
@@ -400,8 +643,10 @@
 					.thought_box{
 
 						.details{
-							text-align: center;
+							align-items: center;
 							margin-bottom: 20px;
+							display: flex;
+							flex-direction: column;
 		
 							h2{
 								color: #fff;
@@ -490,6 +735,152 @@
 							}
 						}
 
+						.journey_info{
+					
+							.journey_sections{
+								display: flex;
+								padding: 0px 60px;
+								align-items: flex-start;
+								margin: 40px 0px;
+								margin-bottom: 0px;
+	
+								@include mobile{
+									flex-direction: column;
+									justify-content: center;
+									padding: 0px;
+									align-items: center;
+									margin:20px 0px;
+								}
+								@include xs {
+									margin:20px  0px;
+								}
+	
+								.unplugged_image{
+									flex: 0.3;
+									margin: 0px 14px;
+									justify-content: flex-end;
+									display: flex;
+	
+									@include mobile{
+										flex: 1;
+										margin-bottom: 15px;
+									}
+			
+									img{
+										width:170px;
+										box-shadow: 0px 0px 11px 2px rgb(222 222 222 / 35%);
+										border-radius: 22px;
+										object-fit: contain;
+										height: 138px;
+	
+										@include mobile{
+											width: 100%;
+										}
+									}
+								}
+			
+								.journey_text{
+									flex: 1;
+									padding-left: 19px;
+									margin: 0px 14px;
+									z-index: 99999;
+	
+									@include mobile{
+										flex: 1;
+										padding-left: 0px;
+										margin: 0px;
+									}
+			
+									.basic_info{
+			
+										.header_text{
+											margin-bottom: 5px;
+			
+											h3{
+												color: #37c;
+												font-size: 24px;
+												font-weight: 400;
+												line-height: 34px;
+												font-family: 'Alegreya Sans', sans-serif;
+	
+												a{
+													cursor: pointer;
+												}
+											}
+										}
+			
+										.founder_text{
+											margin-bottom: 5px;
+			
+											h6{
+												font-size: 16px;
+												color: #5e9516;
+												font-family: 'Didact Gothic';
+												font-weight: bold;
+												letter-spacing: 1px;
+	
+												@include mobile{
+													font-size: 14px;
+												}
+	
+											}
+										}
+	
+										.details_block{
+											color: #fff;
+	
+											.location{
+	
+												p{
+													// font-weight: 700;
+													font-family: 'Mukta';
+												}
+											}
+	
+											.info{
+	
+												p{
+													font-size: 15px;
+													font-family: 'Roboto';
+													margin-top: 18px;
+													font-weight: 400;
+													line-height: 22px;
+	
+													a{
+														color: #37c;
+														font-weight: 500;
+														padding-left: 4px;
+														text-decoration: underline !important;
+													}
+												}
+												ul{
+													margin: 15px 0px;
+													padding-left: 30px;
+	
+													li{
+														font-style: italic;
+														font-size: 15px;
+														font-weight: 500;
+														line-height: 22px;
+														list-style-type: disc;
+														font-family: 'Roboto';
+	
+														a{
+															color: #37c;
+															font-weight: 500;
+															padding-left: 4px;
+															text-decoration: underline !important;
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+	
+							}
+						}
+
 						.thoughts_gallery{
 							display: flex;
 							justify-content: space-between;
@@ -513,7 +904,8 @@
 								}
 
 								img{
-									object-fit: contain;
+									object-fit: cover;
+									height: 100%;
 								}
 							}
 						}
@@ -649,6 +1041,253 @@
 					}
 				}
 
+			}	
+
+			.certification{
+				height: 100vh;
+				display:flex;
+				align-items: center;
+				justify-content: center;
+
+				.journey_block{
+					padding: 80px 0px;
+
+					@include sm{
+						padding: 40px 0px;
+					}
+
+					.details{
+						display: flex;
+						justify-content: center;
+
+						h2{
+							color: #333;
+							font-size: 32px;
+							font-weight: 700;
+							position: relative;
+							text-align: center;
+							margin: 0px;
+							display: inline-block;
+							font-family: 'Jost', sans-serif;
+
+							@include mobile{
+								margin-bottom: 30px;
+							}
+
+
+							&::before{
+								content: "";
+								position: absolute;
+								height: 2px;
+								width: 80px;
+								margin: 0 10px;
+								display: inline-block;
+								background-color: #333;
+								right: 100%;
+								top:50%;
+								
+								@include mobile{
+
+									content: "";
+									position: absolute;
+									height: 2px;
+									width: 80px;
+									margin: 0 10px;
+									display: inline-block;
+									background-color: #333;
+									bottom: -12%;
+									top:inherit;
+									right:inherit;
+									transform: translate(-50%,-50%);
+									left: 45%;
+								}
+							}
+
+							&::after{
+								content: "";
+								position: absolute;
+								height: 2px;
+								width: 80px;
+								margin: 0 10px;
+								display: inline-block;
+								background-color: #333;
+								left: 100%;
+								top:50%;
+
+								@include mobile{
+									display: none;
+								}
+							}
+						}
+					}
+
+					.journey_info{
+					
+						.journey_sections{
+							display: flex;
+							padding: 0px 60px;
+							align-items: flex-start;
+							margin: 40px 0px;
+							margin-bottom: 0px;
+
+							@include mobile{
+								flex-direction: column;
+								justify-content: center;
+								padding: 0px;
+								align-items: center;
+								margin:20px 0px;
+							}
+							@include xs {
+								margin:20px  0px;
+							}
+
+							.unplugged_image{
+								flex: 0.3;
+								margin: 0px 14px;
+								justify-content: flex-end;
+								display: flex;
+
+								@include mobile{
+									flex: 1;
+									margin-bottom: 15px;
+								}
+		
+								img{
+									width:170px;
+									box-shadow: 0px 0px 11px 2px rgb(222 222 222 / 35%);
+    								border-radius: 22px;
+									object-fit: contain;
+									height: 138px;
+
+									@include mobile{
+										width: 100%;
+									}
+								}
+							}
+		
+							.journey_text{
+								flex: 1;
+								padding-left: 19px;
+								margin: 0px 14px;
+
+								@include mobile{
+									flex: 1;
+									padding-left: 0px;
+									margin: 0px;
+								}
+		
+								.basic_info{
+		
+									.header_text{
+										margin-bottom: 5px;
+		
+										h3{
+											color: #37c;
+											font-size: 24px;
+											font-weight: 400;
+											line-height: 34px;
+											font-family: 'Alegreya Sans', sans-serif;
+
+											a{
+												cursor: pointer;
+											}
+										}
+									}
+		
+									.founder_text{
+										margin-bottom: 5px;
+		
+										h6{
+											font-size: 16px;
+											color: #5e9516;
+											font-family: 'Didact Gothic';
+											font-weight: bold;
+											letter-spacing: 1px;
+
+											@include mobile{
+												font-size: 14px;
+											}
+
+										}
+									}
+
+									.details_block{
+										color: #50555c;
+
+										.location{
+
+											p{
+												// font-weight: 700;
+												font-family: 'Mukta';
+											}
+										}
+
+										.info{
+
+											p{
+												font-size: 15px;
+												font-family: 'Roboto';
+												margin-top: 18px;
+												font-weight: 400;
+												line-height: 22px;
+
+												a{
+													color: #37c;
+													font-weight: 500;
+													padding-left: 4px;
+													text-decoration: underline !important;
+												}
+											}
+											ul{
+												margin: 15px 0px;
+												padding-left: 30px;
+
+												li{
+													font-style: italic;
+													font-size: 15px;
+													font-weight: 500;
+													line-height: 22px;
+													list-style-type: disc;
+													font-family: 'Roboto';
+
+													a{
+														color: #37c;
+														font-weight: 500;
+														padding-left: 4px;
+														text-decoration: underline !important;
+													}
+												}
+											}
+
+											.movement{
+												text-align: center;
+												margin-top: 15px;
+
+												@include xs{
+													margin-bottom: 35px;
+												}
+						
+												.movement_text{
+													font-size: 16px;
+													font-weight: 700;
+													font-family: 'Roboto';
+													padding: 12px 18px;
+													background-color: #1b232b;
+													border-radius: 999px;
+													color: #fff;
+													text-align: center;
+													display: inline-block;
+												}
+						
+											}
+										}
+									}
+								}
+							}
+
+						}
+					}
+				}
 			}
 			
 			.system{
@@ -787,7 +1426,7 @@
 
 			.freelance{
 				padding: 80px 0px;
-				background-color: #fff;
+				// background-color: #fff;
 				height: 100vh;
 				padding-bottom: 0px;
 				display: flex;
@@ -800,7 +1439,7 @@
 
 					.coast{
 
-						width: 720px;
+						max-width: 620px;
 						margin: auto;
 						
 
@@ -838,7 +1477,7 @@
 								margin: 0 10px;
 								display: inline-block;
 								background-color: #333;
-								bottom: -2%;
+								bottom: -20%;
 								top:inherit;
 								right:inherit;
 								transform: translate(-50%,-50%);
@@ -892,7 +1531,7 @@
 
 			.coast_coast{
 				padding: 80px 0px;
-				background-color: #fff;
+				// background-color: #fff;
 
 				.details{
 					text-align: center;
@@ -992,7 +1631,7 @@
 						display: flex;
 
 						.image_icons{
-							width: 110px;
+							width: 40px;
 							transition: all .5s cubic-bezier(.7,0,.3,1);
 							margin: 0px 14px;
 
@@ -1002,6 +1641,10 @@
 
 							a{
 								display: inline-block;
+
+								img{
+									height: 40px;
+								}
 							}
 						}
 					}

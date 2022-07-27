@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
-import {ImInstagram} from 'react-icons/im'
-import {MdAddCircleOutline} from 'react-icons/md'
+import {AiFillLinkedin,AiFillTwitterSquare} from 'react-icons/ai'
+import {TiSocialInstagram} from 'react-icons/ti'
 import {CgProfile} from 'react-icons/cg'
 import Link from 'next/link'
 import styles from './SideBar.module.scss'
@@ -32,44 +32,53 @@ const SideBar = () => {
                             <li>
                                 <Link href="">
                                     <a>
-                                        work
+                                        About Me
                                     </a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="">
                                     <a>
-                                        Biography
+                                        Work
                                     </a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="">
                                     <a>
-                                        awards
+                                        Featured
                                     </a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="">
                                     <a>
-                                        contact
+                                        Gallery
                                     </a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="">
                                     <a>
-                                        <ImInstagram/>
+                                        Connect
                                     </a>
                                 </Link>
+                            </li>
+                            <li>
+                                <div className={styles.icons}>
+                                    <Link href="https://www.linkedin.com/in/smitheshpalparthy/">
+                                        <a target="_blank"><AiFillLinkedin/></a>
+                                    </Link>
+                                    <Link href="">
+                                        <a target="_blank"><TiSocialInstagram/></a>
+                                    </Link>
+                                    <Link href="https://twitter.com/MrFunky_Monkie">
+                                        <a target='_blank'><AiFillTwitterSquare/></a>
+                                    </Link>
+                                </div>
                             </li>
                        </ul>
 
-                    </div>
-                    <div className={styles.sidebar_bottom}>
-                        <p> <span><MdAddCircleOutline/></span><span>Create a PDF</span></p>
-                        <p> <span><CgProfile/></span><span>Client Login</span></p>
                     </div>
                 </div>
             </div>

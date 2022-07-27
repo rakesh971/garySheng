@@ -48,6 +48,136 @@ export default function Home() {
 						</div>
 				</Parallax>
 				<div className={styles.main_block}>
+					<div className={styles.Volunteering}>
+						<div className="contain">
+							<div className={styles.journey_block}>
+								<div className={styles.details}>
+									<h2>
+										Volunteering
+									</h2>
+								</div>
+								<div className={styles.journey_info}>
+									<div className={styles.journey_sections}>
+										<div className={styles.unplugged_image}>
+											<img src ="/assets/images/startUp.jpg"/>
+										</div>
+										<div className={styles.journey_text}>
+											<div className={styles.basic_info}>
+												<div className ={styles.header_text}>
+													<h3>
+														<Link href="">
+															<a>
+																Startup Weekend
+															</a>
+														</Link> 
+													</h3>
+												</div>
+												<div className={styles.founder_text}>
+													<h6>
+														<strong>Lead Organiser, Jan 2015 - Present.</strong>
+													</h6>
+												</div>
+												<div className={styles.details_block}>
+													<div className={styles.location}>
+														<p>
+															To know more visit:
+															<Link href="https://www.techstars.com/communities/startup-weekend">
+																<a target="_blank">
+																	https://www.techstars.com/communities/startup-weekend
+
+																</a>
+															</Link>
+														</p>
+													</div>
+													<div className={styles.info}>
+														<p>Startup Weekend Hyderabad is a 54 Hr. event.</p>
+														<p>What happens during the event?</p>
+														<p>All Startup Weekend events follow the same basic model: anyone is welcome to pitch their startup idea and receive feedback from their peers.</p>
+														<p>Friday Evening: Attendees pitch their startup ideas. Teams organically form around the top ideas (as determined by popular vote)</p>
+														<p>Saturday & Sunday: This is when teams build, build & build. It’s a frenzy of business model creation, coding, designing, and market validation to build a minimum viable product.</p>
+														<p>Sunday Evening: The weekend culminates with presentations in front of entrepreneurial leaders with another opportunity for critical feedback.</p>
+														<p>Why should you attend?</p>
+														<p>Platform to launch and test your startup</p>
+														<p>Test your innovative/disruptive startup idea, something that has never been done before, with a bunch of innovative people. Build your network.</p>
+													</div>
+												</div>
+											</div>	
+										</div>
+									</div>
+								</div>
+								<div className={styles.journey_info}>
+									<div className={styles.journey_sections}>
+										<div className={styles.unplugged_image}>
+											<img src ="/assets/images/googlr (1).webp"/>
+										</div>
+										<div className={styles.journey_text}>
+											<div className={styles.basic_info}>
+												<div className ={styles.header_text}>
+													<h3>
+														<Link href="">
+															<a>	
+																ImGeek
+															</a>
+														</Link> 
+													</h3>
+												</div>
+												<div className={styles.founder_text}>
+													<h6>
+														<strong>Student Evangelist,January 2012 - November 2015.</strong>
+													</h6>
+												</div>
+												<div className={styles.details_block}>
+													<div className={styles.location}>
+														<p>
+															<strong>Other Activities.</strong>
+														</p>
+														<p>
+															<Link href='ttps://nextleap.app/smithesh-palparthy/portfolio/nlcfsczi0bvjhq1g5e2av'>
+																<a target="_blank">
+																	Next Leap Fellowship(Product Management) : https://nextleap.app/smithesh-palparthy/portfolio/nlcfsczi0bvjhq1g5e2av
+
+																</a>
+															</Link>	
+														</p>
+													</div>
+												</div>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className={styles.thoughts}>
+						<div className={styles.thoughts_image_box}>
+							<div className="contain">
+								<div className={styles.thought_box}>
+									<div className={styles.details}>
+										<h2>
+											Featured
+										</h2>
+										<h4>Here are my most recent posts:</h4>
+									</div>
+									<div className={styles.thoughts_gallery}>
+										<div className={styles.card}>
+											<Link href="https://www.youtube.com/watch?v=2iOzLntao48">
+												<a target="_blank">
+													<img src="assets/images/e4b1c80d-2ac6-4d14-b673-7d50d6f25bad.jpg"/>
+												</a>
+											</Link>
+										</div>
+										<div className={styles.card}>
+											<Link href="https://nextleap.app/smithesh-palparthy/portfolio/nlcfsczi0bvjhq1g5e2av">
+												<a target="_blank">
+													<img src="assets/images/66a76232-780b-4284-bafb-4890ba875c4c.jpg"/>
+												</a>
+											</Link>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div className={styles.content}>
 						<div className='contain'>
 							<div className={styles.journey_block}>
@@ -59,7 +189,7 @@ export default function Home() {
 								<div className={styles.journey_info}>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/download.png"/>
+											<img src ="/assets/images/1_jeQVI7MsQT8S6zdZOEmc1Q.png"/>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -139,13 +269,6 @@ export default function Home() {
 																I was Awarded the “Best Performer” of the year in December 2021 😍
 															</li>
 														</ul>
-														<div className={styles.movement}>
-															<Link href ="">
-																<a className={styles.movement_text}>
-																	LEARN HOW TO SUPPORT THE MOVEMENT
-																</a>
-															</Link>
-														</div>
 													</div>
 												</div>
 											</div>	
@@ -153,7 +276,7 @@ export default function Home() {
 									</div>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/googlr (1).webp"/>
+											<img src ="/assets/images/5d616d56-0b89-4756-8022-45b1e7bf9f81.jpg"/>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -217,7 +340,7 @@ export default function Home() {
 									</div>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/environment.webp"/>
+											<img src ="/assets/images/images (1).png"/>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -242,36 +365,44 @@ export default function Home() {
 													</div>
 													<div className={styles.info}>
 														<p>Craft Notion is a startup specialising in website and application development.</p>
-														<p>
-															Centre for Innovation and Entrepreneurship(CIE)
-														</p>
-														<p>
-															Communication and Community Manager, June 2017 - July 2018.
-														</p>
-														<p>
-															This was my first encounter with the startup ecosystem.
-														</p>
-														<p>
-															I had been in an on and off relationship with the ecosystem since my engineering days and getting the opportunity to work for India’s First Deep Tech Incubator was the biggest motivation.
-														</p>
-														<p>
-															This journey blew my mind.
-														</p>
-														<p>
-															Started as a Community Intern in the month of March 2017 for a period of one month and then started my full time stint.
-														</p>
-														<p>
-															What did I do?
-														</p>
-														<p>
-															I was the face of CIE based out of IIITH campus as the community manager
-														</p>
-														<p>
-															Right from organizing, speaking, stakeholder management with govt entities and other corporations I was involved in all community-related activities
-														</p>
-														<p>
-															I had the opportunity to learn directly from the founders and handle around 90+ start-ups.
-														</p>
+													</div>
+												</div>
+											</div>	
+										</div>
+									</div>
+									<div className={styles.journey_sections}>
+										<div className={styles.unplugged_image}>
+											<img src ="/assets/images/8c68d411-9eef-45cf-bd4c-635fd833de8d.jpg"/>
+										</div>
+										<div className={styles.journey_text}>
+											<div className={styles.basic_info}>
+												<div className ={styles.header_text}>
+													<h3>
+														<Link href="">
+															<a>
+																Centre for Innovation and Entrepreneurship(CIE)
+															</a>
+														</Link> 
+													</h3>
+												</div>
+												<div className={styles.founder_text}>
+													<h6>
+														<span>Communication and Community Manager,</span>
+														<em> June 2017 - July 2018.</em>
+													</h6>
+												</div>
+												<div className={styles.details_block}>
+													<div className={styles.location}>
+														<p><strong>This was my first encounter with the startup ecosystem.</strong></p>
+													</div>
+													<div className={styles.info}>
+														<p>I had been in an on and off relationship with the ecosystem since my engineering days and getting the opportunity to work for India’s First Deep Tech Incubator was the biggest motivation.</p>
+														<p>This journey blew my mind.</p>
+														<p>Started as a Community Intern in the month of March 2017 for a period of one month and then started my full time stint.</p>
+														<p>What did I do?</p>
+														<p>I was the face of CIE based out of IIITH campus as the community manager</p>
+														<p>Right from organizing, speaking, stakeholder management with govt entities and other corporations I was involved in all community-related activities.</p>
+														<p>I had the opportunity to learn directly from the founders and handle around 90+ start-ups.</p>
 													</div>
 												</div>
 											</div>	
@@ -331,7 +462,7 @@ export default function Home() {
 									</div>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/ce7xvwaah8ux3vdxlcn2.png"/>
+											<img src ="/assets/images/amazon.jpg"/>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -379,7 +510,7 @@ export default function Home() {
 									</div>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/ce7xvwaah8ux3vdxlcn2.png"/>
+											<img src ="/assets/images/graycells.png"/>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -436,12 +567,6 @@ export default function Home() {
 														<p>
 															Jeff Bezos
 														</p>
-														<p><strong>Certifications.</strong></p>
-														<p>I believe that learning never stops as markets change as technology’s change we as a human should also change with time. I love reading articles and gaining knowledge from various industries and personalities.</p>
-														<p>I keep learning on the go and it feels like meditation to me.</p>
-														<p>
-															Here are my certifications.
-														</p>
 													</div>
 												</div>
 											</div>	
@@ -452,194 +577,28 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className={styles.thoughts}>
-						<div className={styles.thoughts_image_box}>
-							<div className="contain">
-								<div className={styles.thought_box}>
-									<div className={styles.details}>
-										<h2>
-											My thoughts
-										</h2>
-										<div className={styles.thoughts_matter}>
-											<h4>
-												<span>
-													I share ideas and observations about the intersection of web3 and social impact (and more broadly, the future of humanity) on
-												</span>
-												<strong>
-													<Link href="">
-														<a>
-															LinkedIn
-														</a>
-													</Link>
-												</strong>
-												and
-												<strong>
-													<Link href="">
-														<a>
-															Twitter
-														</a>
-													</Link>
-												</strong>
-												<span>
-													Feel free to connect with me on both.
-												</span>
-											</h4>
-										</div>
-										<h4>Here are four of my most recent posts:</h4>
-									</div>
-									<div className={styles.thoughts_gallery}>
-										<div className={styles.card}>
-											<img src="assets/images/555505_377064.webp"/>
-										</div>
-										<div className={styles.card}>
-											<img src="assets/images/71962_688031.webp"/>
-										</div>
-										<div className={styles.card}>
-											<img src="assets/images/214149_857758.webp"/>
-										</div>
-										<div className={styles.card}>
-											<img src="assets/images/324784_833989.webp"/>
-										</div>
-									</div>
+					<div className={styles.certification}>
+						<div className="contain">
+							<div className={styles.journey_block}>
+								<div className={styles.details}>
+									<h2>
+										Certifications.
+									</h2>
 								</div>
-							</div>
-						</div>
-					</div>
-					<div className={styles.communities}>
-						<div className={styles.communities_image}>
-							<div className="contain">
-								<div className={styles.communities_box}>
-									<div className={styles.details}>
-										<h2>
-											My communities
-										</h2>
-										<h4>
-											The people in my life are everything to me. Here are a few communities in which I am most active:
-										</h4>
-									</div>
-									<div className={styles.communities_gallery}>
-										<div className={styles.card}>
-											<div className={styles.card_info}>
-												<h3>Civics Unplugged 🚀</h3>	
-												<p>
-													<Link href="">
-														<a>
-															Civics Unplugged
-														</a>
-													</Link>
-													empowers leaders of Gen Z with the training, funding, and network they need to become the civic innovators the world needs.
-												</p>
-											</div>
+								<div className={styles.journey_info}>
+									<div className={styles.journey_sections}>
+							
+										<div className={styles.journey_text}>
+											<div className={styles.basic_info}>
+												<div className={styles.details_block}>
+													<div className={styles.info}>
+														<p>I believe that learning never stops as markets change as technology’s change we as a human should also change with time. I love reading articles and gaining knowledge from various industries and personalities.</p>
+														<p>I keep learning on the go and it feels like meditation to me.</p>
+														<p>Here are my certifications.</p>
+													</div>
+												</div>
+											</div>	
 										</div>
-										<div className={styles.card}>
-											<div className={styles.card_info}>
-												<h3>Dream DAO 👩🏽‍🚀</h3>	
-												<p>
-													<Link href="">
-														<a>
-															Dream DAO
-														</a>
-													</Link>
-													is a community of Civics Unplugged that empowers Gen Z builders to leverage the power web3 to build a brighter future for humanity.
-												</p>
-											</div>
-										</div>
-										<div className={styles.card}>
-											<div className={styles.card_info}>
-												<h3>FWB 🤝</h3>	
-												<p>
-													<Link href="">
-														<a>
-															Friends with Benefits
-														</a>
-													</Link>
-														is a DAO consisting of leading web3 artists, operators, and thinkers bound together by a desire to push web3 forward.
-												</p>
-											</div>
-										</div>
-										<div className={styles.card}>
-											<div className={styles.card_info}>
-												<h3>groundw3rk 🌱</h3>	
-												<p>
-													A network of DAO builders created by
-													<Link href="">
-														<a>
-															David Ehrlichman
-														</a>
-													</Link>
-													who will support and work with one another to co-create the future of DAOs and web3.
-												</p>
-											</div>
-										</div>
-										<div className={styles.card}>
-											<div className={styles.card_info}>
-												<h3>1729 🌐</h3>	
-												<p>
-													<Link href="">
-														<a>
-															1729
-														</a>
-													</Link>
-													is a digital-first community devoted not just to explaining what a network state looks like, but to actually build the first one.
-												</p>
-											</div>
-										</div>
-										<div className={styles.card}>
-											<div className={styles.card_info}>
-												<h3>
-													Gitcoin 🤖
-												</h3>	
-												<p>
-													<Link href="">
-														<a>
-															Gitcoin
-														</a>
-													</Link>
-													is a platform and community consisting of members coordinating to build and fund public goods in web3 and beyond.
-												</p>
-											</div>
-										</div>
-										<div className={styles.card}>
-											<div className={styles.card_info}>
-												<h3>Future Foundation 💸</h3>	
-												<p>
-													<Link href="">
-														<a>
-															Future Foundation 
-														</a>
-													</Link>
-													is a social impact collective that supports web3 x social impact organizations, causes, and the broader ecosystem.
-												</p>
-											</div>
-										</div>
-										<div className={styles.card}>
-											<div className={styles.card_info}>
-												<h3>The Institute for Cultural Evolution 🇺🇸</h3>	
-												<p>
-													The purpose of the 
-													<Link href="">
-														<a>
-															Institute for Cultural Evolution
-														</a>
-													</Link>
-													is to advance the evolution of American politics by highlighting the emerging developmental perspective on culture.
-												</p>
-											</div>
-										</div>
-										<div className={styles.card}>
-											<div className={styles.card_info}>
-												<h3>KERNEL (KB5) 🌰</h3>	
-												<p>
-													<Link href="">
-														<a>
-															Kernel
-														</a>
-													</Link>
-													is a peer-to-peer learning community dedicated to the journey towards a better understanding of truth: in our work, in our relationships with others, and in our inner worlds.
-												</p>
-											</div>
-										</div>
-										
 									</div>
 								</div>
 							</div>
@@ -678,48 +637,41 @@ export default function Home() {
 												</Link>
 											</li>
 											<li>
-												<Link href="https://www.bondora.com/blog/beyond-finance-why-you-should-also-invest-in-yourself">
+												<Link href="https://medium.com/@twoguyswhoblog/dont-take-life-too-seriously-two-guys-who-blog-1f224fd21c86">
 													<a target="_blank">
 														Don’t take yourself too seriously.
 													</a>
 												</Link>
 											</li>
 											<li>
-												<Link href="https://www.bondora.com/blog/beyond-finance-why-you-should-also-invest-in-yourself">
+												<Link href="https://medium.com/publishous/learn-to-laugh-at-your-problems-2486e8ae3b12">
 													<a target="_blank">
 														Laugh out at your problems
 													</a>
 												</Link>
 											</li>
 											<li>
-												<Link href="https://www.bondora.com/blog/beyond-finance-why-you-should-also-invest-in-yourself">
+												<Link href="https://insighttimer.com/blog/how-to-be-humble/">
 													<a target="_blank">
 														Stay Humble
 													</a>
 												</Link>
 											</li>
 											<li>
-												<Link href="https://www.bondora.com/blog/beyond-finance-why-you-should-also-invest-in-yourself">
+												<Link href="https://www.minimalismmadesimple.com/home/spread-happiness/">
 													<a target="_blank">
 														Spread happiness the world needs it.
 													</a>
 												</Link>
 											</li>
 											<li>
-												<Link href="https://www.bondora.com/blog/beyond-finance-why-you-should-also-invest-in-yourself">
+												<Link href="https://www.goodtherapy.org/blog/to-live-your-truth-start-by-being-honest-with-yourself-0815194/amp/">
 													<a target="_blank">
 														The most important be honest and genuine.
 													</a>
 												</Link>
 											</li>
 										</ul>
-										<div className={styles.movement}>
-											<Link href ="">
-												<a className={styles.movement_text}>
-													DIVE DEEPER INTO MY BRAIN
-												</a>
-											</Link>
-										</div>
 									</div>
 								</div>
 							</div>
@@ -741,19 +693,20 @@ export default function Home() {
 						<div className='contain'>
 							<div className={styles.details}>
 								<div className={styles.coast}>
-									<p><strong>I'm Chicago-bred,</strong></p>
-									<p><strong>wander from coast to coast,</strong></p>
-									<p><strong>and welcome bribes in the form of Korean BBQ.</strong></p>
+									<p><strong>I am obsessed with food and in my free time I do nothing but eat. Apart from food, I love travelling and learning everyday.</strong></p>
 								</div>
 								<h4>
+									I do believe in the barter system and welcome bribes in the form of Chicken Tandoori.
+								</h4>
+								<h4>
 									Let’s connect for some chai what say??
-									<Link href="">
+									<Link href="https://twitter.com/MrFunky_Monkie">
 										<a>
 											Twitter
 										</a>
 									</Link>
 										and 
-									<Link href="">
+									<Link href="https://www.linkedin.com/in/smitheshpalparthy/">
 										<a>
 											LinkedIn
 										</a>
@@ -763,26 +716,24 @@ export default function Home() {
 							<div className={styles.social_icons}>
 								<div className={styles.icons}>
 									<div className={styles.image_icons}>
-										<Link href="https://twitter.com/">
-											<a>
+										<Link href="https://twitter.com/MrFunky_Monkie">
+											<a target="_blank">
 												<img src ="/assets/images/623978_506580.webp"/>
 											</a>
 										</Link>
 										
 									</div>
 									<div className={styles.image_icons}>
-										<Link href="https://www.linkedin.com/signup">
-											<a>
+										<Link href="https://www.linkedin.com/in/smitheshpalparthy/">
+											<a target="_blank">
 												<img src ="/assets/images/svvszaufolhr4jkwl7vz.webp"/>
 											</a>
 										</Link>
 									</div>
-								</div>
-								<div className={styles.mail}>
-									<div className={styles.mail_box}>
+									<div className={styles.image_icons}>
 										<Link href="">
-											<a>
-												<img src="/assets/images/download (1).png"/>
+											<a target="_blank">
+												<img src="/assets/images/email.png"/>
 											</a>
 										</Link>
 									</div>

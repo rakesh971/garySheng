@@ -99,6 +99,7 @@
     position: fixed;
     background-color: rgba(0, 0, 0, 0.8);
     transition:  0.5s ease-in-out;
+
     .sidebar_wrapper{
 
         .sidebar_info{
@@ -109,6 +110,7 @@
             ul{
                 li{
                     margin-bottom: 10px;
+                    
                     a{
                         color: #FFF;
                         font-size: 24px;
@@ -116,7 +118,23 @@
                         text-transform: capitalize;
 
                         svg{
-                            fill:#fff
+                            fill:#fff;
+                            font-size: 32px;
+                        }
+                    }
+
+                    .icons{
+
+                        a{
+                            color: #FFF;
+                            font-size: 24px;
+                            font-family: 'Nanum Gothic', sans-serif;
+                            text-transform: capitalize;
+    
+                            svg{
+                                fill:#fff;
+                                font-size: 32px;
+                            }
                         }
                     }
                 }
@@ -153,55 +171,6 @@
     &.sidebar_hidden{
         left: 0px;
 
-        .sidebar_wrapper{
-
-            .sidebar_info{
-                position: absolute;
-                left: 70px;
-                top: 125px;
-
-                ul{
-                    li{
-                        margin-bottom: 10px;
-                        a{
-                            color: #FFF;
-                            font-size: 24px;
-                            font-family: 'Nanum Gothic', sans-serif;
-                            text-transform: capitalize;
-
-                            svg{
-                                fill:#fff
-                            }
-                        }
-                    }
-                }
-            }
-
-            .sidebar_bottom{
-                position: absolute;
-                bottom: 92px;
-                width: 150px;
-                height: 33px;
-                left: 70px;
-                cursor: pointer;
-                
-                p{
-                    color: #FFF;
-                    font-size: 18px;
-                    font-family: 'Noto Sans TC';
-                    text-transform: capitalize;
-                    margin-bottom: 10px;
-                    display: flex;
-                    align-items: center;
-
-                    svg{
-                        fill: #fff;
-                        font-size: 32px;
-                        margin-right: 6px;
-                        margin-top: 3px;
-                    }
-                }
-            }
-        }
+        
     }
 }
