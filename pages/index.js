@@ -72,13 +72,17 @@ export default function Home({work,featured,conntact}) {
 						<div className='contain'>
 							<div className={styles.about_me}>
 								<div className={styles.about_background}>
-									{/* <div className={styles.about_content}>
+									<div className={styles.about_content}>
 										<p>I believe you have to be willing to be misunderstood if you're going to innovate.</p>
 										<p>Jeff Bezos</p>
-									</div> */}
+									</div>
 								</div>
 								<div className={styles.profile_image}>
-									<img src="/assets/images/profile.jpg"/>
+									<Link href="">
+										<a>
+											<img src="/assets/images/profile.jpg"/>
+										</a>
+									</Link>
 								</div>
 							</div>	
 						</div>
@@ -105,7 +109,11 @@ export default function Home({work,featured,conntact}) {
 								<div className={styles.journey_info}>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/startUp.jpg"/>
+											<Link href="">
+												<a>
+													<img src ="/assets/images/startUp.jpg"/>
+												</a>
+											</Link>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -129,7 +137,7 @@ export default function Home({work,featured,conntact}) {
 															<span>To know more visit:</span>
 															<Link href="https://www.techstars.com/communities/startup-weekend">
 																<a target="_blank">
-																	https://www.techstars.com/communities/startup-weekend
+																	Techstars
 																</a>
 															</Link>
 														</p>
@@ -153,7 +161,11 @@ export default function Home({work,featured,conntact}) {
 								<div className={styles.journey_info}>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/googlr (1).webp"/>
+											<Link href="">
+												<a>
+													<img src ="/assets/images/geek.jpg"/>
+												</a>
+											</Link>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -170,21 +182,6 @@ export default function Home({work,featured,conntact}) {
 													<h6>
 														<strong>Student Evangelist,January 2012 - November 2015.</strong>
 													</h6>
-												</div>
-												<div className={styles.details_block}>
-													<div className={styles.location}>
-														<p>
-															<strong>Other Activities.</strong>
-														</p>
-														<p>
-															<Link href='ttps://nextleap.app/smithesh-palparthy/portfolio/nlcfsczi0bvjhq1g5e2av'>
-																<a target="_blank">
-																	Next Leap Fellowship(Product Management) : https://nextleap.app/smithesh-palparthy/portfolio/nlcfsczi0bvjhq1g5e2av
-
-																</a>
-															</Link>	
-														</p>
-													</div>
 												</div>
 											</div>	
 										</div>
@@ -242,14 +239,18 @@ export default function Home({work,featured,conntact}) {
 								</div>
 								<div className={styles.journey_info}>
 									<div className={styles.journey_sections}>
-										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/1_jeQVI7MsQT8S6zdZOEmc1Q.png"/>
+										<div className={styles.unplugged_image}>,
+											<Link href="https://www.onblick.com/">
+												<a>
+													<img src ="/assets/images/1_jeQVI7MsQT8S6zdZOEmc1Q.png"/>
+												</a>
+											</Link>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
 												<div className ={styles.header_text}>
 													<h3>
-														<Link href="">
+														<Link href="https://www.onblick.com/">
 															<a>
 																OnBlick INC
 															</a>
@@ -330,13 +331,17 @@ export default function Home({work,featured,conntact}) {
 									</div>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/magna.jpg"/>
+											<Link href="https://www.magnaquest.com/">
+												<a>
+													<img src ="/assets/images/magna.jpg"/>
+												</a>
+											</Link>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
 												<div className ={styles.header_text}>
 													<h3>
-														<Link href="">
+														<Link href="https://www.magnaquest.com/">
 															<a>
 																Magnaquest Technologies
 															</a>
@@ -394,13 +399,17 @@ export default function Home({work,featured,conntact}) {
 									</div>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/images (1).png"/>
+											<Link href="https://craftnotion.com/">
+												<a>
+													<img src ="/assets/images/images (1).png"/>
+												</a>
+											</Link>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
 												<div className ={styles.header_text}>
 													<h3>
-														<Link href="">
+														<Link href="https://craftnotion.com/">
 															<a>
 																Craft Notion
 															</a>
@@ -426,7 +435,11 @@ export default function Home({work,featured,conntact}) {
 									</div>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/cie.jpg"/>
+											<Link href=" ">
+												<a>
+													<img src ="/assets/images/cie.jpg"/>
+												</a>
+											</Link>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -464,7 +477,11 @@ export default function Home({work,featured,conntact}) {
 									</div>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/images.png"/>
+											<Link href=" ">
+												<a>
+													<img src ="/assets/images/aa3c4f0f-6a10-4401-8013-5e6260d9764f.jpg"/>
+												</a>
+											</Link>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -516,7 +533,11 @@ export default function Home({work,featured,conntact}) {
 									</div>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/amazon.jpg"/>
+											<Link href="https://www.amazon.in/">
+												<a>
+													<img src ="/assets/images/amazon.jpg"/>
+												</a>
+											</Link>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -564,7 +585,11 @@ export default function Home({work,featured,conntact}) {
 									</div>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/garey.png"/>
+											<Link href="">
+												<a>
+													<img src ="/assets/images/grey.jpg"/>
+												</a>
+											</Link>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -641,10 +666,9 @@ export default function Home({work,featured,conntact}) {
 													<div className={styles.info}>
 														<p>I believe that learning never stops as markets change as technology’s change we as a human should also change with time. I love reading articles and gaining knowledge from various industries and personalities.</p>
 														<p>I keep learning on the go and it feels like meditation to me.</p>
-														<p>Here are my certifications.</p>
 														<Link href="https://www.linkedin.com/in/smitheshpalparthy/details/certifications/">
 															<a target='_blank'>
-																https://www.linkedin.com/in/smitheshpalparthy/details/certifications/
+																Here are my certifications
 															</a>
 														</Link>
 													</div>
@@ -735,7 +759,14 @@ export default function Home({work,featured,conntact}) {
 								<div className={styles.coast}>
 									<h2>I sometimes take on freelance opportunities.</h2>
 									<p>
-										Have an exciting project where you need some help ? Send me over a message, Email
+										Have an exciting project where you need some help ? Send me over a message, 
+										<Link href="">
+											<a target="_blank">
+												<strong>
+													Email
+												</strong>
+											</a>
+										</Link>
 									</p>
 								</div>
 							</div>
@@ -757,10 +788,15 @@ export default function Home({work,featured,conntact}) {
 											Twitter
 										</a>
 									</Link>
-										and 
 									<Link href="https://www.linkedin.com/in/smitheshpalparthy/">
 										<a>
 											LinkedIn
+										</a>
+									</Link>
+									and
+									<Link href="">
+										<a>
+											Email
 										</a>
 									</Link>.
 								</h4>
