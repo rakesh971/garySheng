@@ -9,9 +9,9 @@ export default function Home() {
 
   return (
     <PanelLayout>
-		<div className={styles.container}>
+		<div className={styles.container} id="about">
 			<div className={styles.wrapper}>
-				<Parallax
+				{/* <Parallax
 					bgImage="/assets/images/Untitled-1_msxftc.webp"
 					strength={300}
 					bgImageStyle={{
@@ -34,6 +34,7 @@ export default function Home() {
 								width: percentage * 500,
 							}}
 						>
+							<img src="/assets/images/profile.jpg"/>
 						</div>
 					)}
 					>
@@ -46,8 +47,24 @@ export default function Home() {
 								</p>
 							</div>
 						</div>
-				</Parallax>
+				</Parallax> */}
 				<div className={styles.main_block}>
+					<div className={styles.about} >
+						<div className='contain'>
+						<div className={styles.about_me}>
+							<div className={styles.about_background}>
+								<div className={styles.about_content}>
+									<p><strong>Quote I relate to.</strong></p>
+									<p>I believe you have to be willing to be misunderstood if you're going to innovate.</p>
+									<p>Jeff Bezos</p>
+								</div>
+							</div>
+							<div className={styles.profile_image}>
+								<img src="/assets/images/profile.jpg"/>
+							</div>
+						</div>	
+						</div>
+					</div>
 					<div className={styles.Volunteering}>
 						<div className="contain">
 							<div className={styles.journey_block}>
@@ -148,7 +165,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className={styles.thoughts}>
+					<div className={styles.thoughts} id="featured">
 						<div className={styles.thoughts_image_box}>
 							<div className="contain">
 								<div className={styles.thought_box}>
@@ -180,7 +197,7 @@ export default function Home() {
 					</div>
 					<div className={styles.content}>
 						<div className='contain'>
-							<div className={styles.journey_block}>
+							<div className={styles.journey_block} id="work" >
 								<div className={styles.details}>
 									<h2>
 										My journey
@@ -510,7 +527,7 @@ export default function Home() {
 									</div>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/graycells.png"/>
+											<img src ="/assets/images/garey.png"/>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -559,13 +576,6 @@ export default function Home() {
 														</p>
 														<p>	
 															May be it is from there I started gaining interest in products and how a road map should be created to get the product out in the market. The Idea, Validation, Go To Market Strategies all these terminologies is what I knew of but got to experience them. In the end one thing I always follow till date is that the customer is the king no doubt about it. Customers are the ones who can make or break your business. They are in the centre of whatever decision you take as a business.
-														</p>
-														<p><strong>Quote I relate to.</strong></p>
-														<p>
-															I believe you have to be willing to be misunderstood if you're going to innovate.
-														</p>
-														<p>
-															Jeff Bezos
 														</p>
 													</div>
 												</div>
@@ -689,7 +699,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className={styles.coast_coast}>
+					<div className={styles.coast_coast} id="contact">
 						<div className='contain'>
 							<div className={styles.details}>
 								<div className={styles.coast}>

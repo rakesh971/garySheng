@@ -19,7 +19,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
+            
             @include sm{
                 left:6px;
                 top:16px;
@@ -57,7 +57,7 @@
             left: 70px;
             width: 26px;
             height: 18px;
-            z-index: 999;
+            z-index: 99999999999;
             padding: 10px;
             cursor: pointer;
             position: fixed;

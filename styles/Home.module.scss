@@ -127,6 +127,44 @@
 
 		.main_block{
 
+			.about{
+				background-color: #000;
+				margin-bottom: 40px;
+
+				.about_me{
+					position: relative;
+					height: 300px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+
+					.about_background{
+						color: #fff;
+						text-align: center;
+					}
+
+					.profile_image{
+						position: absolute;
+						transform: translate(-50%,50%);
+						left:50%;
+						bottom:0%;
+						background-color: #fff;
+						height: 160px;
+						width: 160px;
+						box-sizing: border-box;
+						border-radius: 49.9%;
+						overflow: hidden;
+						border: 5px solid #fff;
+						padding: 3px;
+					
+						
+						img{
+							object-fit: cover;
+						}
+					}
+				}
+			}
 			.Volunteering{
 				.journey_block{
 					padding: 80px 0px;
@@ -227,7 +265,7 @@
 								display: flex;
 
 								@include mobile{
-									flex: 1;
+									width:100%;
 									margin-bottom: 15px;
 								}
 		
@@ -235,11 +273,11 @@
 									width:170px;
 									box-shadow: 0px 0px 11px 2px rgb(222 222 222 / 35%);
     								border-radius: 22px;
-									object-fit: contain;
 									height: 138px;
 
 									@include mobile{
 										width: 100%;
+										object-fit: cover;
 									}
 								}
 							}
@@ -250,7 +288,7 @@
 								margin: 0px 14px;
 
 								@include mobile{
-									flex: 1;
+									width:100%;
 									padding-left: 0px;
 									margin: 0px;
 								}
@@ -392,7 +430,7 @@
 							font-family: 'Jost', sans-serif;
 
 							@include mobile{
-								margin-bottom: 30px;
+								margin-bottom: 15px;
 							}
 
 
@@ -456,11 +494,9 @@
 								justify-content: center;
 								padding: 0px;
 								align-items: center;
-								margin:20px 0px;
+								margin: 0px;
 							}
-							@include xs {
-								margin:20px  0px;
-							}
+							
 
 							.unplugged_image{
 								flex: 0.3;
@@ -469,17 +505,17 @@
 								display: flex;
 
 								@include mobile{
-									flex: 1;
-									margin-bottom: 15px;
+									width:100%;
+									margin:24px 15px;
+
 								}
 		
 								img{
 									width:168px;
 									box-shadow: 0px 0px 11px 2px rgb(159 153 153 / 38%);
     								border-radius: 22px;
-									object-fit: contain;
+									// object-fit: cover;
 									height: 136px;
-									padding: 4px;
 
 									@include mobile{
 										width: 100%;
@@ -616,29 +652,29 @@
 				position: relative;
 
 				.thoughts_image_box{
-					background-repeat: no-repeat;
-					background-size: cover;
-					position: relative;
-					background-image: url(https://images.unsplash.com/photo-1580775702218-1f746c0c49b0?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=1500&w=2000&fit=clip&fm=jpg);
-					padding: 80px 0px;
-					background-position:50% 50%;
+					// background-repeat: no-repeat;
+					// background-size: cover;
+					// position: relative;
+					// background-image: url(https://images.unsplash.com/photo-1580775702218-1f746c0c49b0?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&h=1500&w=2000&fit=clip&fm=jpg);
+					// padding: 80px 0px;
+					// background-position:50% 50%;
 
-					@include mobile{
-						background-position:80%;
-						padding:40px 0px;
-					}
+					// @include mobile{
+					// 	background-position:80%;
+					// 	padding:40px 0px;
+					// }
 					
-					&:before{
-						transform-style: preserve-3d;
-						background: rgb(0 0 0 / 39%);
-						position: absolute;
-						top:0px;
-						bottom: 0px;
-						left: 0px;
-						right: 0px;
-						content: "";
-						display: inline-block;
-					}
+					// &:before{
+					// 	transform-style: preserve-3d;
+					// 	background: rgb(0 0 0 / 39%);
+					// 	position: absolute;
+					// 	top:0px;
+					// 	bottom: 0px;
+					// 	left: 0px;
+					// 	right: 0px;
+					// 	content: "";
+					// 	display: inline-block;
+					// }
 
 					.thought_box{
 
@@ -649,7 +685,7 @@
 							flex-direction: column;
 		
 							h2{
-								color: #fff;
+								color: #333;
 								font-size: 32px;
 								font-weight: 700;
 								position: relative;
@@ -725,7 +761,7 @@
 								}
 							}
 							h4{
-								color: #fff;
+								color: #678;
 								font-size: 17px;
 								font-weight: 600;
 								position: relative;
@@ -886,13 +922,13 @@
 							justify-content: space-between;
 							flex-wrap: wrap;
 							position: relative;
-							z-index: 99999;
 
 							.card{
 								width: calc(50% - 40px);
 								margin: 14px 20px;
 								transition: all .5s cubic-bezier(.7,0,.3,1);
 								cursor: pointer;
+								box-shadow: 0px 0px 5px 5px #dedede;
 
 								@include mobile{
 									width: 100%;
@@ -1048,6 +1084,10 @@
 				display:flex;
 				align-items: center;
 				justify-content: center;
+
+				@include mobile{
+					height: 100%;
+				}
 
 				.journey_block{
 					padding: 80px 0px;
@@ -1293,12 +1333,12 @@
 			.system{
 
 				.system_image{
-					background-image: url(//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/9621/a4011e77-0e25-416f-ab13-d3840a5664e3_kssoov.jpg);
-					background-repeat: no-repeat;
-					background-size: cover;
-					position: relative;
-					padding: 80px 0px;
-					background-position: 50% 50%;
+					// background-image: url(//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/9621/a4011e77-0e25-416f-ab13-d3840a5664e3_kssoov.jpg);
+					// background-repeat: no-repeat;
+					// background-size: cover;
+					// position: relative;
+					// padding: 80px 0px;
+					// background-position: 50% 50%;
 
 					.system_block{
 
@@ -1307,7 +1347,7 @@
 							margin-bottom: 20px;
 		
 							h2{
-								color: #fff;
+								color: #333;
 								font-size: 32px;
 								font-weight: 700;
 								position: relative;
@@ -1323,7 +1363,7 @@
 									width: 80px;
 									margin: 0 10px;
 									display: inline-block;
-									background-color: #fff;
+									background-color: #333;
 									right: 100%;
 									top:50%;
 
@@ -1334,7 +1374,7 @@
 										width: 80px;
 										margin: 0 10px;
 										display: inline-block;
-										background-color: #fff;
+										background-color: #333;
 										bottom: -12%;
 										top:inherit;
 										right:inherit;
@@ -1350,7 +1390,7 @@
 									width: 80px;
 									margin: 0 10px;
 									display: inline-block;
-									background-color: #fff;
+									background-color: #333;
 									left: 100%;
 									top:50%;
 
@@ -1360,7 +1400,7 @@
 								}
 							}
 							h4{
-								color: #fff;
+								color: #333;
 								font-size: 16px;
 								font-weight: 400;
 								position: relative;
@@ -1382,7 +1422,7 @@
 									justify-content: center;
 									padding-bottom: 10px;
 									line-height: 1.45;
-									color: #fff;
+									color: #333;
 									font-size: 26px;
 									font-weight: 400;
 									font-family: 'Bebas Neue', cursive;
@@ -1398,25 +1438,6 @@
 										}
 									}
 								}
-							}
-
-							.movement{
-								text-align: center;
-								margin-top: 15px;
-		
-								.movement_text{
-									font-size: 16px;
-									font-weight: 700;
-									font-family: 'Roboto';
-									padding: 12px 18px;
-									background-color: #1b232b;
-									border-radius: 25px;
-									color: #fff;
-									text-align: center;
-									text-shadow: 0 1px rgb(0 0 0 / 20%);
-									display: inline-block;
-								}
-		
 							}
 						}
 		

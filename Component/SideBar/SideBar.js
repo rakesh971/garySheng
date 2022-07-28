@@ -11,7 +11,7 @@ const SideBar = () => {
 	const handleClick  = event =>{
 		SetToggle(current => !current);
 	}
-
+    const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)  
   return (
 
     <div className={styles.header}>
@@ -30,23 +30,23 @@ const SideBar = () => {
                     <div className={styles.sidebar_info}>
                        <ul>
                             <li>
-                                <Link href="">
+                                <Link href="/">
                                     <a>
                                         About Me
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="">
+                                <Link href="#featured">
                                     <a>
-                                        Work
+                                        Featured
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="">
+                                <Link href="#work">
                                     <a>
-                                        Featured
+                                        Work
                                     </a>
                                 </Link>
                             </li>
@@ -58,7 +58,7 @@ const SideBar = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="">
+                                <Link href="#contact">
                                     <a>
                                         Connect
                                     </a>
@@ -68,9 +68,6 @@ const SideBar = () => {
                                 <div className={styles.icons}>
                                     <Link href="https://www.linkedin.com/in/smitheshpalparthy/">
                                         <a target="_blank"><AiFillLinkedin/></a>
-                                    </Link>
-                                    <Link href="">
-                                        <a target="_blank"><TiSocialInstagram/></a>
                                     </Link>
                                     <Link href="https://twitter.com/MrFunky_Monkie">
                                         <a target='_blank'><AiFillTwitterSquare/></a>
