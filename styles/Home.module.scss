@@ -86,54 +86,29 @@
 			}
 		}
 
-		.image_block{
-			text-shadow: 0 1px 2px rgb(0 0 0 / 20%);
-			height: 100vh;
-			width: 100%;
-			
-			@include mobile{
-				background-position:80%;
-			}
-
-			.main_text{
-				position: absolute;
-				transform: translate(-50%,-50%);
-				top: 50%;
-				left: 50%;
-				text-align: center;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				flex-direction: column;
-
-				p{
-					margin: 0px 0px 10px 0px;
-					line-height: 1.45;
-					font-size: 26px;
-					font-weight: 400;
-					color: #fff;
-					font-family: 'Alegreya Sans';
-				}
-				
-				h1{
-					font-size: 59px;
-					font-weight: 700;
-					color: #fff;
-					line-height: 70.2px;
-					word-wrap:break-word;
-				}
-			}
-		}
 
 		.main_block{
 
 			.about{
 				background-color: #000;
 				margin-bottom: 40px;
+				position: relative;
+
+				&:before{
+					transform-style: preserve-3d;
+					background: #a0b4b7;
+					position: absolute;
+					top:0px;
+					bottom: 0px;
+					left: 0px;
+					right: 0px;
+					content: "";
+					display: inline-block;
+				}
 
 				.about_me{
 					position: relative;
-					height: 300px;
+					height: 200px;
 					display: flex;
 					align-items: center;
 					justify-content: center;
@@ -142,6 +117,15 @@
 					.about_background{
 						color: #fff;
 						text-align: center;
+
+						.about_content{
+
+							p{
+								font-size: 22px;
+								margin-bottom: 8px;
+								text-transform: uppercase;
+							}
+						}
 					}
 
 					.profile_image{
@@ -150,8 +134,8 @@
 						left:50%;
 						bottom:0%;
 						background-color: #fff;
-						height: 160px;
-						width: 160px;
+						height: 250px;
+						width: 250px;
 						box-sizing: border-box;
 						border-radius: 49.9%;
 						overflow: hidden;
@@ -165,11 +149,52 @@
 					}
 				}
 			}
+
+			.image_block{
+				text-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+				margin-top: 180px;
+				width: 100%;
+				position: relative;
+				
+				@include mobile{
+					background-position:80%;
+				}
+	
+				.main_text{
+					// position: absolute;
+					// transform: translate(-50%,-50%);
+					// top: 50%;
+					// left: 50%;
+					text-align: center;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+	
+					p{
+						margin: 0px 0px 10px 0px;
+						line-height: 1.45;
+						font-size: 26px;
+						font-weight: 400;
+						color: #333;
+						font-family: 'Alegreya Sans';
+					}
+					
+					h1{
+						font-size: 59px;
+						font-weight: 700;
+						color: #333;
+						line-height: 70.2px;
+						word-wrap:break-word;
+					}
+				}
+			}
+
 			.Volunteering{
 				.journey_block{
 					padding: 80px 0px;
 
-					@include sm{
+					@include mobile{
 						padding: 40px 0px;
 					}
 
@@ -259,13 +284,13 @@
 							}
 
 							.unplugged_image{
-								flex: 0.3;
+								flex: 0.4;
 								margin: 0px 14px;
 								justify-content: flex-end;
 								display: flex;
 
 								@include mobile{
-									width:100%;
+									// width:100%;
 									margin-bottom: 15px;
 								}
 		
@@ -276,7 +301,7 @@
 									height: 138px;
 
 									@include mobile{
-										width: 100%;
+										// width: 100%;
 										object-fit: cover;
 									}
 								}
@@ -336,6 +361,10 @@
 											p{
 												// font-weight: 700;
 												font-family: 'Mukta';
+
+												a{
+													word-break: break-word;
+												}
 											}
 										}
 
@@ -347,6 +376,10 @@
 												margin-top: 18px;
 												font-weight: 400;
 												line-height: 22px;
+
+												span{
+													display: inline-block;
+												}
 
 												a{
 													color: #37c;
@@ -499,13 +532,13 @@
 							
 
 							.unplugged_image{
-								flex: 0.3;
+								flex: 0.4;
 								margin: 0px 14px;
 								justify-content: flex-end;
 								display: flex;
 
 								@include mobile{
-									width:100%;
+									// width:100%;
 									margin:24px 15px;
 
 								}
@@ -518,7 +551,8 @@
 									height: 136px;
 
 									@include mobile{
-										width: 100%;
+										// width: 100%;
+										object-fit: cover;
 									}
 								}
 							}
@@ -599,6 +633,10 @@
 											ul{
 												margin: 15px 0px;
 												padding-left: 30px;
+
+												@include mobile{
+													margin-bottom: 0px;
+												}
 
 												li{
 													font-style: italic;
@@ -923,25 +961,46 @@
 							flex-wrap: wrap;
 							position: relative;
 
-							.card{
+							@include mobile{
+								align-items: center;
+								justify-content: center;
+							}
+
+							.card_box{
 								width: calc(50% - 40px);
 								margin: 14px 20px;
-								transition: all .5s cubic-bezier(.7,0,.3,1);
-								cursor: pointer;
-								box-shadow: 0px 0px 5px 5px #dedede;
+								padding: 12px;
+								border:2px solid #000;
 
 								@include mobile{
-									width: 100%;
+									width: 300px;
 									margin:14px 0px;
 								}
 
-								&:hover{
-									transform: scale(1.04);
+								.card{
+									width: 100%;
+									height: 80%;
+									transition: all .5s cubic-bezier(.7,0,.3,1);
+									cursor: pointer;
+									box-shadow: 0px 0px 5px 5px #dedede;
+	
+									&:hover{
+										transform: scale(1.04);
+									}
+	
+									img{
+										object-fit: cover;
+										height: 100%;
+									}
 								}
 
-								img{
-									object-fit: cover;
-									height: 100%;
+								p{
+									margin-top: 12px;
+									color: #333;
+									font-weight: 700;
+									font-size: 18px;
+									font-family: 'Mukta';
+									text-align: center;
 								}
 							}
 						}
@@ -1080,17 +1139,13 @@
 			}	
 
 			.certification{
-				height: 100vh;
 				display:flex;
 				align-items: center;
 				justify-content: center;
 
-				@include mobile{
-					height: 100%;
-				}
-
 				.journey_block{
 					padding: 80px 0px;
+					padding-top: 0px;
 
 					@include sm{
 						padding: 40px 0px;
@@ -1278,6 +1333,11 @@
 													text-decoration: underline !important;
 												}
 											}
+
+											a{
+												word-break:break-word;
+											}
+
 											ul{
 												margin: 15px 0px;
 												padding-left: 30px;
@@ -1448,7 +1508,6 @@
 			.freelance{
 				padding: 80px 0px;
 				// background-color: #fff;
-				height: 100vh;
 				padding-bottom: 0px;
 				display: flex;
 				align-items: center;
@@ -1665,6 +1724,7 @@
 
 								img{
 									height: 40px;
+									object-fit: cover;
 								}
 							}
 						}

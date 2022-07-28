@@ -1,11 +1,30 @@
 import styles from '../styles/Home.module.scss'
-import { useState } from 'react'
+import { useState,useRef,useEffect } from 'react'
 import Link from 'next/link'
 import PanelLayout from '../Component/PanelLayout/PanelLayout';
 import { RiArrowUpSFill,RiArrowDownSFill } from 'react-icons/ri';
 import { Parallax } from 'react-parallax'
 
-export default function Home() {
+export default function Home({work,featured,conntact}) {
+
+	const [showScrollTopButton, setShowScrollTopButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        setShowScrollTopButton(true);
+      } else {
+        setShowScrollTopButton(false);
+      }
+    });
+  }, []);
+
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <PanelLayout>
@@ -51,18 +70,28 @@ export default function Home() {
 				<div className={styles.main_block}>
 					<div className={styles.about} >
 						<div className='contain'>
-						<div className={styles.about_me}>
-							<div className={styles.about_background}>
-								<div className={styles.about_content}>
-									<p><strong>Quote I relate to.</strong></p>
-									<p>I believe you have to be willing to be misunderstood if you're going to innovate.</p>
-									<p>Jeff Bezos</p>
+							<div className={styles.about_me}>
+								<div className={styles.about_background}>
+									{/* <div className={styles.about_content}>
+										<p>I believe you have to be willing to be misunderstood if you're going to innovate.</p>
+										<p>Jeff Bezos</p>
+									</div> */}
 								</div>
+								<div className={styles.profile_image}>
+									<img src="/assets/images/profile.jpg"/>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div className={styles.image_block}>
+						<div className='contain'>
+							<div className={styles.main_text}>
+								<p><em>Hey, I'm</em></p>
+								<h1>Smithesh</h1>
+								<p>
+									I’m Hyderabad(India) based Marketer, Product Enthusiast and a Humanist.
+								</p>
 							</div>
-							<div className={styles.profile_image}>
-								<img src="/assets/images/profile.jpg"/>
-							</div>
-						</div>	
 						</div>
 					</div>
 					<div className={styles.Volunteering}>
@@ -97,11 +126,10 @@ export default function Home() {
 												<div className={styles.details_block}>
 													<div className={styles.location}>
 														<p>
-															To know more visit:
+															<span>To know more visit:</span>
 															<Link href="https://www.techstars.com/communities/startup-weekend">
 																<a target="_blank">
 																	https://www.techstars.com/communities/startup-weekend
-
 																</a>
 															</Link>
 														</p>
@@ -165,7 +193,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-					<div className={styles.thoughts} id="featured">
+					<div className={styles.thoughts} id="featured" >
 						<div className={styles.thoughts_image_box}>
 							<div className="contain">
 								<div className={styles.thought_box}>
@@ -173,22 +201,31 @@ export default function Home() {
 										<h2>
 											Featured
 										</h2>
-										<h4>Here are my most recent posts:</h4>
 									</div>
 									<div className={styles.thoughts_gallery}>
-										<div className={styles.card}>
-											<Link href="https://www.youtube.com/watch?v=2iOzLntao48">
-												<a target="_blank">
-													<img src="assets/images/e4b1c80d-2ac6-4d14-b673-7d50d6f25bad.jpg"/>
-												</a>
-											</Link>
+										<div className={styles.card_box}>
+											<div className={styles.card}>
+												<Link href="https://www.youtube.com/watch?v=2iOzLntao48">
+													<a target="_blank">
+														<img src="assets/images/e4b1c80d-2ac6-4d14-b673-7d50d6f25bad.jpg"/>
+													</a>
+												</Link>
+											</div>
+											<p>
+												After Movie Uber Ice Cream
+											</p>
 										</div>
-										<div className={styles.card}>
-											<Link href="https://nextleap.app/smithesh-palparthy/portfolio/nlcfsczi0bvjhq1g5e2av">
-												<a target="_blank">
-													<img src="assets/images/66a76232-780b-4284-bafb-4890ba875c4c.jpg"/>
-												</a>
-											</Link>
+										<div className={styles.card_box}>
+											<div className={styles.card}>
+												<Link href="https://nextleap.app/smithesh-palparthy/portfolio/nlcfsczi0bvjhq1g5e2av">
+													<a target="_blank">
+														<img src="assets/images/66a76232-780b-4284-bafb-4890ba875c4c.jpg"/>
+													</a>
+												</Link>
+											</div>
+											<p>
+												Associate Product Manager Fellowship
+											</p>
 										</div>
 									</div>
 								</div>
@@ -293,7 +330,7 @@ export default function Home() {
 									</div>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/5d616d56-0b89-4756-8022-45b1e7bf9f81.jpg"/>
+											<img src ="/assets/images/magna.jpg"/>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -389,7 +426,7 @@ export default function Home() {
 									</div>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<img src ="/assets/images/8c68d411-9eef-45cf-bd4c-635fd833de8d.jpg"/>
+											<img src ="/assets/images/cie.jpg"/>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -605,6 +642,11 @@ export default function Home() {
 														<p>I believe that learning never stops as markets change as technology’s change we as a human should also change with time. I love reading articles and gaining knowledge from various industries and personalities.</p>
 														<p>I keep learning on the go and it feels like meditation to me.</p>
 														<p>Here are my certifications.</p>
+														<Link href="https://www.linkedin.com/in/smitheshpalparthy/details/certifications/">
+															<a target='_blank'>
+																https://www.linkedin.com/in/smitheshpalparthy/details/certifications/
+															</a>
+														</Link>
 													</div>
 												</div>
 											</div>	
@@ -743,7 +785,7 @@ export default function Home() {
 									<div className={styles.image_icons}>
 										<Link href="">
 											<a target="_blank">
-												<img src="/assets/images/email.png"/>
+												<img src="/assets/images/gmail.png"/>
 											</a>
 										</Link>
 									</div>
@@ -752,12 +794,15 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-				<div className={styles.scroll_buttons}>
-					<div className={styles.buttons_grp}>
-						<button><RiArrowUpSFill/></button>
-						<button><RiArrowDownSFill/></button>
+
+				{showScrollTopButton &&
+					<div className={styles.scroll_buttons}>
+						<div className={styles.buttons_grp}>
+							<button onClick={scrollTop}><RiArrowUpSFill/></button>
+							{/* <button><RiArrowDownSFill/></button> */}
+						</div>
 					</div>
-				</div>
+				}
 			</div>
 		</div>
 	</PanelLayout>

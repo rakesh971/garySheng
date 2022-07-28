@@ -11,7 +11,7 @@ const SideBar = () => {
 	const handleClick  = event =>{
 		SetToggle(current => !current);
 	}
-    const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)  
+
   return (
 
     <div className={styles.header}>
@@ -30,7 +30,7 @@ const SideBar = () => {
                     <div className={styles.sidebar_info}>
                        <ul>
                             <li>
-                                <Link href="/">
+                                <Link href="#about">
                                     <a>
                                         About Me
                                     </a>
