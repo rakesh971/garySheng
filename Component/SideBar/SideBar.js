@@ -30,7 +30,7 @@ const SideBar = () => {
                     <div className={styles.sidebar_info}>
                        <ul>
                             <li>
-                                <Link href="#about">
+                                <Link href="/">
                                     <a>
                                         About Me
                                     </a>
