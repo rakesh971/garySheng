@@ -109,8 +109,8 @@ export default function Home({work,featured,conntact}) {
 								<div className={styles.journey_info}>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
-											<Link href="">
-												<a>
+											<Link href="https://www.techstars.com/communities/startup-weekend">
+												<a target="_blank">
 													<img src ="/assets/images/startUp.jpg"/>
 												</a>
 											</Link>
@@ -119,8 +119,8 @@ export default function Home({work,featured,conntact}) {
 											<div className={styles.basic_info}>
 												<div className ={styles.header_text}>
 													<h3>
-														<Link href="">
-															<a>
+														<Link href="https://www.techstars.com/communities/startup-weekend">
+															<a target="_blank">
 																Startup Weekend
 															</a>
 														</Link> 
@@ -434,10 +434,10 @@ export default function Home({work,featured,conntact}) {
 										</div>
 									</div>
 									<div className={styles.journey_sections}>
-										<div className={styles.unplugged_image}>
-											<Link href=" ">
-												<a>
-													<img src ="/assets/images/cie.jpg"/>
+										<div className={`${styles.unplugged_image} ${styles.center_image}`}>
+											<Link href="https://cie.iiit.ac.in/">
+												<a target="_blank">
+													<img src ="/assets/images/8c68d411-9eef-45cf-bd4c-635fd833de8d.jpg"/>
 												</a>
 											</Link>
 										</div>
@@ -445,8 +445,8 @@ export default function Home({work,featured,conntact}) {
 											<div className={styles.basic_info}>
 												<div className ={styles.header_text}>
 													<h3>
-														<Link href="">
-															<a>
+														<Link href="https://cie.iiit.ac.in/">
+															<a target="_blank">
 																Centre for Innovation and Entrepreneurship(CIE)
 															</a>
 														</Link> 
