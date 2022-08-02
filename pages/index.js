@@ -2,81 +2,38 @@ import styles from '../styles/Home.module.scss'
 import { useState,useRef,useEffect } from 'react'
 import Link from 'next/link'
 import PanelLayout from '../Component/PanelLayout/PanelLayout';
-import { RiArrowUpSFill,RiArrowDownSFill } from 'react-icons/ri';
+import { RiArrowUpSFill} from 'react-icons/ri';
 import { Parallax } from 'react-parallax'
 
 export default function Home({work,featured,conntact}) {
 
 	const [showScrollTopButton, setShowScrollTopButton] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        setShowScrollTopButton(true);
-      } else {
-        setShowScrollTopButton(false);
-      }
-    });
-  }, []);
+	useEffect(() => {
+		window.addEventListener("scroll", () => {
+		if (window.scrollY > 300) {
+			setShowScrollTopButton(true);
+		} else {
+			setShowScrollTopButton(false);
+		}
+		});
+	}, []);
 
-  const scrollTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+	const scrollTop = () => {
+		window.scrollTo({
+		top: 0,
+		behavior: "smooth",
+		});
+	};
 
   return (
     <PanelLayout>
 		<div className={styles.container} id="about">
 			<div className={styles.wrapper}>
-				{/* <Parallax
-					bgImage="/assets/images/Untitled-1_msxftc.webp"
-					strength={300}
-					bgImageStyle={{
-						height:'100%',
-						objectFit:'cover',
-						objectPosition:'right',
-						width:'100%'
-					}}
-					style={{
-						width:'100%',
-						height:'100vh'
-					}}
-					renderLayer={percentage => (
-						<div
-							style={{
-								position: 'absolute',
-								left: '50%',
-								top: '50%',
-								transform:'translate(-50%,-50%)',
-								width: percentage * 500,
-							}}
-						>
-							<img src="/assets/images/profile.jpg"/>
-						</div>
-					)}
-					>
-						<div className={styles.image_block}>
-							<div className={styles.main_text}>
-								<p><em>Hey, I'm</em></p>
-								<h1>Smithesh</h1>
-								<p>
-									I’m Hyderabad(India) based Marketer, Product Enthusiast and a Humanist.
-								</p>
-							</div>
-						</div>
-				</Parallax> */}
 				<div className={styles.main_block}>
 					<div className={styles.about} >
 						<div className='contain'>
 							<div className={styles.about_me}>
-								<div className={styles.about_background}>
-									<div className={styles.about_content}>
-										<p>I believe you have to be willing to be misunderstood if you're going to innovate.</p>
-										<p>Jeff Bezos</p>
-									</div>
-								</div>
 								<div className={styles.profile_image}>
 									<Link href="">
 										<a>
@@ -90,11 +47,15 @@ export default function Home({work,featured,conntact}) {
 					<div className={styles.image_block}>
 						<div className='contain'>
 							<div className={styles.main_text}>
-								<p><em>Hey, I'm</em></p>
+								<p className={styles.font_italic}><em>Hey, I'm</em></p>
 								<h1>Smithesh</h1>
-								<p>
-									I’m Hyderabad(India) based Marketer, Product Enthusiast and a Humanist.
-								</p>
+								<div className={styles.content}>
+									<p>
+										I’m Hyderabad(India) based Marketer, Product Enthusiast and a Humanist.
+									</p>
+									<p>I am obsessed with food and in my free time I do nothing but eat. Apart from food, I love travelling and learning everyday.</p>
+									<p>I do believe in the barter system and welcome bribes in the form of Chicken Tandoori.</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -117,31 +78,25 @@ export default function Home({work,featured,conntact}) {
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
-												<div className ={styles.header_text}>
-													<h3>
+												<h3>
+													<Link href="https://www.techstars.com/communities/startup-weekend">
+														<a target="_blank">
+															Startup Weekend
+														</a>
+													</Link> 
+												</h3>
+												<h6>
+														Lead Organiser, Jan 2015 - Present.
+												</h6>
+												<div className={styles.details_block}>
+													<p className={styles.location}>
+														<strong>To know more visit:</strong>
 														<Link href="https://www.techstars.com/communities/startup-weekend">
 															<a target="_blank">
-																Startup Weekend
+																Techstars
 															</a>
-														</Link> 
-													</h3>
-												</div>
-												<div className={styles.founder_text}>
-													<h6>
-														<strong>Lead Organiser, Jan 2015 - Present.</strong>
-													</h6>
-												</div>
-												<div className={styles.details_block}>
-													<div className={styles.location}>
-														<p>
-															<span>To know more visit:</span>
-															<Link href="https://www.techstars.com/communities/startup-weekend">
-																<a target="_blank">
-																	Techstars
-																</a>
-															</Link>
-														</p>
-													</div>
+														</Link>
+													</p>
 													<div className={styles.info}>
 														<p>Startup Weekend Hyderabad is a 54 Hr. event.</p>
 														<p>What happens during the event?</p>
@@ -169,20 +124,16 @@ export default function Home({work,featured,conntact}) {
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
-												<div className ={styles.header_text}>
-													<h3>
-														<Link href="">
-															<a>	
-																ImGeek
-															</a>
-														</Link> 
-													</h3>
-												</div>
-												<div className={styles.founder_text}>
-													<h6>
-														<strong>Student Evangelist,January 2012 - November 2015.</strong>
-													</h6>
-												</div>
+												<h3>
+													<Link href="">
+														<a>	
+															ImGeek
+														</a>
+													</Link> 
+												</h3>
+												<h6>
+													Student Evangelist,January 2012 - November 2015.
+												</h6>
 											</div>	
 										</div>
 									</div>
@@ -229,7 +180,7 @@ export default function Home({work,featured,conntact}) {
 							</div>
 						</div>
 					</div>
-					<div className={styles.content}>
+					<div className={styles.Volunteering}>
 						<div className='contain'>
 							<div className={styles.journey_block} id="work" >
 								<div className={styles.details}>
@@ -248,24 +199,18 @@ export default function Home({work,featured,conntact}) {
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
-												<div className ={styles.header_text}>
-													<h3>
-														<Link href="https://www.onblick.com/">
-															<a>
-																OnBlick INC
-															</a>
-														</Link> 
-													</h3>
-												</div>
-												<div className={styles.founder_text}>
-													<h6>
-														<strong>Social Media and Community Manager, Since October 2020.</strong>
-													</h6>
-												</div>
+												<h3>
+													<Link href="https://www.onblick.com/">
+														<a>
+															OnBlick INC
+														</a>
+													</Link> 
+												</h3>
+												<h6>
+													Social Media and Community Manager, Since October 2020.
+												</h6>
 												<div className={styles.details_block}>
-													<div className={styles.location}>
-														<p>United States</p>
-													</div>
+													<p className={styles.location}>United States</p>
 													<div className={styles.info}>
 														<p>In the month of October 2020 I left Magnaquest to join OnBlick a SaaS based Immigration and HR Compliance Software as a Social Media and Community Manager.</p>
 														<p>
@@ -339,25 +284,19 @@ export default function Home({work,featured,conntact}) {
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
-												<div className ={styles.header_text}>
-													<h3>
-														<Link href="https://www.magnaquest.com/">
-															<a>
-																Magnaquest Technologies
-															</a>
-														</Link> 
-													</h3>
-												</div>
-												<div className={styles.founder_text}>
-													<h6>
-														<span>Senior Executive/Marketing,</span>
-														<em>March 2019 - September 2019.</em>
-													</h6>
-												</div>
+												<h3>
+													<Link href="https://www.magnaquest.com/">
+														<a>
+															Magnaquest Technologies
+														</a>
+													</Link> 
+												</h3>
+												<h6>
+													<span>Senior Executive/Marketing,</span>
+													March 2019 - September 2019.
+												</h6>
 												<div className={styles.details_block}>
-													<div className={styles.location}>
-														<p>Hyderabad</p>
-													</div>
+													<p className={styles.location}>Hyderabad</p>
 													<div className={styles.info}>
 														<p>
 															Magnaquest Technologies Limited is a cutting-edge and engaging innovative Enterprise Product-based Solutions
@@ -386,11 +325,13 @@ export default function Home({work,featured,conntact}) {
 															I tried my hands on content writing too and wrote the content for the website.
 														</p>
 														<p>
-															Have a look at it here. <Link href="www.Magnaquest.com ">
+															Have a look at it here.
+															<Link href="www.Magnaquest.com ">
 																<a>
-																	www.Magnaquest.com 🙌
+																	www.Magnaquest.com 
 																</a>
 															</Link>
+															🙌
 														</p>
 													</div>
 												</div>
@@ -407,25 +348,21 @@ export default function Home({work,featured,conntact}) {
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
-												<div className ={styles.header_text}>
-													<h3>
-														<Link href="https://craftnotion.com/">
-															<a>
-																Craft Notion
-															</a>
-														</Link> 
-													</h3>
-												</div>
-												<div className={styles.founder_text}>
-													<h6>
-														<span>Marketing and Operations Manager,</span>
-														<em>July 2018 - February 2019.</em>
-													</h6>
-												</div>
+												<h3>
+													<Link href="https://craftnotion.com/">
+														<a>
+															Craft Notion
+														</a>
+													</Link> 
+												</h3>
+												<h6>
+													<span>Marketing and Operations Manager,</span>
+													July 2018 - February 2019.
+												</h6>
 												<div className={styles.details_block}>
-													<div className={styles.location}>
-														<p>Hyderabad</p>
-													</div>
+													<p className={styles.location}>
+														Hyderabad
+													</p>
 													<div className={styles.info}>
 														<p>Craft Notion is a startup specialising in website and application development.</p>
 													</div>
@@ -443,25 +380,21 @@ export default function Home({work,featured,conntact}) {
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
-												<div className ={styles.header_text}>
-													<h3>
-														<Link href="https://cie.iiit.ac.in/">
-															<a target="_blank">
-																Centre for Innovation and Entrepreneurship(CIE)
-															</a>
-														</Link> 
-													</h3>
-												</div>
-												<div className={styles.founder_text}>
-													<h6>
-														<span>Communication and Community Manager,</span>
-														<em> June 2017 - July 2018.</em>
-													</h6>
-												</div>
+												<h3>
+													<Link href="https://cie.iiit.ac.in/">
+														<a target="_blank">
+															Centre for Innovation and Entrepreneurship(CIE)
+														</a>
+													</Link> 
+												</h3>
+												<h6>
+													<span>Communication and Community Manager,</span>
+													 June 2017 - July 2018.
+												</h6>
 												<div className={styles.details_block}>
-													<div className={styles.location}>
-														<p><strong>This was my first encounter with the startup ecosystem.</strong></p>
-													</div>
+													<p className={styles.location}>
+														This was my first encounter with the startup ecosystem.
+													</p>
 													<div className={styles.info}>
 														<p>I had been in an on and off relationship with the ecosystem since my engineering days and getting the opportunity to work for India’s First Deep Tech Incubator was the biggest motivation.</p>
 														<p>This journey blew my mind.</p>
@@ -485,31 +418,27 @@ export default function Home({work,featured,conntact}) {
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
-												<div className ={styles.header_text}>
-													<h3>
-														<Link href="">
-															<a>
-																Shukra Infotech	
-															</a>
-														</Link> 
-													</h3>
-												</div>
-												<div className={styles.founder_text}>
-													<h6>
-														<span>Marketing/ Business Development</span>
-														<em>January 2016 - February 2017</em>
-													</h6>
-												</div>
+												<h3>
+													<Link href="">
+														<a>
+															Shukra Infotech	
+														</a>
+													</Link> 
+												</h3>
+												<h6>
+													<span>Marketing/ Business Development</span>
+													January 2016 - February 2017
+												</h6>
 												<div className={styles.details_block}>
-													<div className={styles.location}>
-														<p>Hyderabad</p>
-													</div>
+													<p className={styles.location}>
+														Hyderabad
+													</p>
 													<div className={styles.info}>
 														<p>
 															I joined Shukra right after my college and worked on a product called “The Indian Talks” which was a blogging platform. I took care of the whole product right from inception.
 														</p>
 														<p>
-														Did a lot of fun Interviews with various tech giants and Govt Officials.
+															Did a lot of fun Interviews with various tech giants and Govt Officials.
 														</p>
 														<ul>
 															<li>
@@ -541,27 +470,23 @@ export default function Home({work,featured,conntact}) {
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
-												<div className ={styles.header_text}>
-													<h3>
-														<Link href="">
-															<a>
-																Amazon India
-															</a>
-														</Link> 
-													</h3>
-												</div>
-												<div className={styles.founder_text}>
-													<h6>
-														<span>Customer Service Associate</span>
-														<em>
-															September 2015 to October 2016
-														</em>
-													</h6>
-												</div>
+												<h3>
+													<Link href="">
+														<a>
+															Amazon India
+														</a>
+													</Link> 
+												</h3>
+												<h6>
+													<span>Customer Service Associate</span>
+													
+														September 2015 to October 2016
+													
+												</h6>
 												<div className={styles.details_block}>
-													<div className={styles.location}>
-														<p>Hyderabad</p>
-													</div>
+													<p className={styles.location}>
+														Hyderabad
+													</p>
 													<div className={styles.info}>
 														<p>
 															Amazon was the first time I entered a corporate office setup a huge facility with all new perspective.
@@ -571,12 +496,11 @@ export default function Home({work,featured,conntact}) {
 														</p>
 														<p>
 															In my journey with Amazon, I've been a part of different operational units (
-																<Link href="Amazon.com">
-																	<a>
-																	Amazon.com
-																	</a>
-																</Link>, .in, .uk) and been a part of both voice & non-voice process.
-
+															<Link href="Amazon.com">
+																<a>
+																Amazon.com
+																</a>
+															</Link>, .in, .uk) and been a part of both voice & non-voice process.
 														</p>
 													</div>
 												</div>
@@ -593,27 +517,23 @@ export default function Home({work,featured,conntact}) {
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
-												<div className ={styles.header_text}>
-													<h3>
-														<Link href="">
-															<a>
-																Grey Cells Technologies
-															</a>
-														</Link> 
-													</h3>
-												</div>
-												<div className={styles.founder_text}>
-													<h6>
-														<span>Founder</span>
-														<em>
-															January 2015 - December 2018
-														</em>
-													</h6>
-												</div>
+												<h3>
+													<Link href="">
+														<a>
+															Grey Cells Technologies
+														</a>
+													</Link> 
+												</h3>
+												<h6>
+													<span>Founder</span>
+													
+														January 2015 - December 2018
+													
+												</h6>
 												<div className={styles.details_block}>
-													<div className={styles.location}>
-														<p>Chandigarh</p>
-													</div>
+													<p className={styles.location}>
+														Chandigarh
+													</p>
 													<div className={styles.info}>
 														<p>
 															I call this as the most successful failure of my life.
@@ -644,22 +564,20 @@ export default function Home({work,featured,conntact}) {
 											</div>	
 										</div>
 									</div>
-									
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className={styles.certification}>
+					<div className={styles.Volunteering}>
 						<div className="contain">
 							<div className={styles.journey_block}>
 								<div className={styles.details}>
 									<h2>
-										Certifications.
+										Certifications
 									</h2>
 								</div>
-								<div className={styles.journey_info}>
+								<div className={`${styles.journey_info} ${styles.certification_info}`}>
 									<div className={styles.journey_sections}>
-							
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
 												<div className={styles.details_block}>
@@ -692,58 +610,108 @@ export default function Home({work,featured,conntact}) {
 									<div className={styles.system_content}>
 										<ul>
 											<li>
-												<Link href="https://jackcanfield.com/blog/how-to-believe-in-yourself">
-													<a target="_blank" >
-														Believe in change
-													</a>
-												</Link>
-											</li>
-											<li>
-												<Link href="https://cdn2.hubspot.net/hubfs/2602672/Imported_Blog_Media/Customer_Is_King_Infographic.jpg" >
-													<a target="_blank" >
-														Customer is king
-													</a>
-												</Link>
-											</li>
-											<li>
-												<Link href="https://www.bondora.com/blog/beyond-finance-why-you-should-also-invest-in-yourself">
-													<a target="_blank" >
-														Invest in yourself
-													</a>
-												</Link>
-											</li>
-											<li>
-												<Link href="https://medium.com/@twoguyswhoblog/dont-take-life-too-seriously-two-guys-who-blog-1f224fd21c86">
-													<a target="_blank">
-														Don’t take yourself too seriously.
-													</a>
-												</Link>
-											</li>
-											<li>
-												<Link href="https://medium.com/publishous/learn-to-laugh-at-your-problems-2486e8ae3b12">
-													<a target="_blank">
-														Laugh out at your problems
-													</a>
-												</Link>
-											</li>
-											<li>
+												<span>
+													<img src="/assets/images/2696555.png"/>
+												</span>
 												<Link href="https://insighttimer.com/blog/how-to-be-humble/">
 													<a target="_blank">
-														Stay Humble
+														<span>Stay Humble</span>
+														<span>
+															<img src="/assets/images/7268615.png"/>
+														</span>
 													</a>
 												</Link>
 											</li>
 											<li>
+												<span>
+													<img src="/assets/images/2696555.png"/>
+												</span>
+												<Link href="https://cdn2.hubspot.net/hubfs/2602672/Imported_Blog_Media/Customer_Is_King_Infographic.jpg" >
+													<a target="_blank" >
+														<span>Customer is king</span>
+														<span>
+															<img src="/assets/images/7268615.png"/>
+														</span>
+													</a>
+												</Link>
+											</li>
+											<li>
+												<span>
+													<img src="/assets/images/2696555.png"/>
+												</span>
+												<Link href="https://jackcanfield.com/blog/how-to-believe-in-yourself">
+													<a target="_blank" >
+														<span>Believe in change</span>
+														<span>
+															<img src="/assets/images/7268615.png"/>
+														</span>
+													</a>
+												</Link>
+												
+											</li>
+											
+											<li>
+												<span>
+													<img src="/assets/images/2696555.png"/>
+												</span>
+												<Link href="https://www.bondora.com/blog/beyond-finance-why-you-should-also-invest-in-yourself">
+													<a target="_blank" >
+														<span>Invest in yourself</span>
+														<span>
+															<img src="/assets/images/7268615.png"/>
+														</span>
+													</a>
+												</Link>
+											</li>
+											<li>
+												<span>
+													<img src="/assets/images/2696555.png"/>
+												</span>
+												<Link href="https://medium.com/publishous/learn-to-laugh-at-your-problems-2486e8ae3b12">
+													<a target="_blank">
+														<span>Laugh out at your problems</span>
+														<span>
+															<img src="/assets/images/7268615.png"/>
+														</span>
+													</a>
+												</Link>
+											</li>
+											<li>
+												<span>
+													<img src="/assets/images/2696555.png"/>
+												</span>
+												<Link href="https://medium.com/@twoguyswhoblog/dont-take-life-too-seriously-two-guys-who-blog-1f224fd21c86">
+													<a target="_blank">
+														<span>Don’t take yourself too seriously.</span>
+														<span>
+															<img src="/assets/images/7268615.png"/>
+														</span>
+													</a>
+												</Link>
+											</li>
+											<li>
+												<span>
+													<img src="/assets/images/2696555.png"/>
+												</span>
 												<Link href="https://www.minimalismmadesimple.com/home/spread-happiness/">
 													<a target="_blank">
-														Spread happiness the world needs it.
+														<span>Spread happiness the world needs it.</span>
+														<span>
+															<img src="/assets/images/7268615.png"/>
+														</span>
 													</a>
 												</Link>
 											</li>
 											<li>
+												<span>
+													<img src="/assets/images/2696555.png"/>
+												</span>
 												<Link href="https://www.goodtherapy.org/blog/to-live-your-truth-start-by-being-honest-with-yourself-0815194/amp/">
 													<a target="_blank">
-														The most important be honest and genuine.
+														<span>The most important be honest and genuine.</span>
+														<span>
+															<img src="/assets/images/7268615.png"/>
+														</span>
 													</a>
 												</Link>
 											</li>
@@ -775,12 +743,6 @@ export default function Home({work,featured,conntact}) {
 					<div className={styles.coast_coast} id="contact">
 						<div className='contain'>
 							<div className={styles.details}>
-								<div className={styles.coast}>
-									<p><strong>I am obsessed with food and in my free time I do nothing but eat. Apart from food, I love travelling and learning everyday.</strong></p>
-								</div>
-								<h4>
-									I do believe in the barter system and welcome bribes in the form of Chicken Tandoori.
-								</h4>
 								<h4>
 									Let’s connect for some chai what say??
 									<Link href="https://twitter.com/MrFunky_Monkie">
@@ -830,12 +792,10 @@ export default function Home({work,featured,conntact}) {
 						</div>
 					</div>
 				</div>
-
 				{showScrollTopButton &&
 					<div className={styles.scroll_buttons}>
 						<div className={styles.buttons_grp}>
 							<button onClick={scrollTop}><RiArrowUpSFill/></button>
-							{/* <button><RiArrowDownSFill/></button> */}
 						</div>
 					</div>
 				}

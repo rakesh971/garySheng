@@ -28,7 +28,7 @@ html {
         padding: 0;
         overflow-x: hidden !important;
         scroll-behavior: smooth;
-        font-family: $primaryFont;
+        font-family: 'Heebo', sans-serif;
 
         h1,
         h2,
@@ -111,60 +111,33 @@ html {
     }
 }
 
-.form-control {
-    border: 1px solid #ccc;
-    margin: 0;
-    padding: 0;
-}
 
-label {
-    display: block;
-}
 
-.form-check {
-    display: flex;
 
-    input {
-        margin-right: 6px;
-        margin-top: 4px;
-    }
-
-    label {
-        line-height: unset;
-    }
-}
-
-.section_title {
-    font-weight: 600;
-    font-size: 24px;
-    letter-spacing: -0.5px;
-    margin-bottom: 10px;
-}
-
-.marg_30 {
-    margin-top: 20px;
-    margin-bottom: 100px;
-}
 strong{
     font-weight: 700;
-    font-family: 'Mukta';
+    font-size: 15px;
 }
+
 .contain{
-    width: 1056px;
-    margin: 0 auto;
+    max-width: 1056px;
+    margin-left: auto;
+    margin-right: auto;
+	padding-right: 30px;
+	padding-left: 30px;
 
     @include tab{ 
-        width: 656px;
+        max-width: 720px;
         margin: 0 auto;
     }
 
     @include mobile{
-        width: 456px;
+        max-width: 456px;
         margin: 0 auto;
         padding: 0px 12px;
     }
     @include xs {
-        width:320px;
+        max-width:320px;
         margin: 0 auto;
     }
 

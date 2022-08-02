@@ -2,90 +2,123 @@
 
 .header{
 
-    .hamberg{
-        .hamberg_menu{
-            top: 36px;
-            left: 70px;
-            width: 50px;
-            height: 50px;
-            z-index: 999;
-            padding: 10px;
-            cursor: pointer;
-            position: fixed;
-            background-color: transparent;
-            border: none;
-            border-radius: 0px;
-            outline: none;
+    .hamberg_menu{
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 2px 2px rgb(222 222 222 / 26%);
+        background-color: #fff;
+        padding: 4px;
+        padding-right: 6px;
+        position: fixed;
+        top: 36px;
+        left: 50px;
+        cursor: pointer;
+        z-index: 999;
+
+        @include mobile{
+            left:25px;
+        }
+
+        button{
             display: flex;
             align-items: center;
             justify-content: center;
+            border: none;
+            outline: none;
+            margin-right: 6px;
+            background-color: transparent;
             
-            @include sm{
-                left:6px;
-                top:16px;
+            svg{
+                font-size: 28px;
+                fill:#333;
             }
+            
+            @include mobile{
+                left:6px;
+                top:0px;
+            }
+
             span{
-                background-color: #245078;
-                height: 4px;
-                width: 26px;
+                
                 position: absolute;
                 display: inline-block;
                 transition: all .25s ease-in-out;
 
                 &:nth-child(1){
-                    top:8px;
+                    top:10px;
                     transform: rotate(0deg);
                 }
 
                 &:nth-child(2){
-                    top:16px;
+                    top:17px;
                 }
 
                 &:nth-child(3){
-                    top:24px;
+                    bottom:10px;
                     transform: rotate(0deg);
                 }
             }
         }
+        
+        .navigate{
+            color: #333;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 28px;
+        }
 
-        .active{
-            position: relative;
-            background: none;
-            border: none;
-            transition: all .25s ease-in-out;
-            top: 36px;
-            left: 70px;
+        }
+
+    .active{
+        background-color: transparent;
+
+        button{
+        position: relative;
+        background: none;
+        border: none;
+        transition: all .25s ease-in-out;
+        // top: 36px;
+        // left: 70px;
+        width: 26px;
+        height: 35px;
+        z-index: 99999999999;
+        padding: 10px;
+        cursor: pointer;
+        // position: fixed;
+        margin-right: 20px;
+        box-shadow: none;
+        
+        svg{
+            display: none;
+        }
+
+        span{
+            display: block;
             width: 26px;
-            height: 18px;
-            z-index: 99999999999;
-            padding: 10px;
-            cursor: pointer;
-            position: fixed;
-            
-            span{
-                display: block;
-                width: 26px;
-                height: 4px;
-                left: 22px;
-                margin-left: -9px;
-                position: absolute;
-                background: #fff;
-                transform-origin: left center;
-                transition: all .25s ease-in-out;
+            height: 4px;
+            left: 20px;
+            margin-left: -9px;
+            position: absolute;
+            background: #fff;
+            transform-origin: left center;
+            transition: all .25s ease-in-out;
+            transform: rotate(45deg);
+            top:6px;
 
-                &:nth-child(1){
-                    transform: rotate(45deg);
-                    top:6px;
-                }
-                &:nth-child(2){
-                    opacity: 0;
-                    width: 0%;
-                }
-                &:nth-child(3){
-                    top:24px;
-                    transform: rotate(-45deg)
-                }
+            &:nth-child(2){
+                opacity: 0;
+                width: 0%;
             }
+            &:nth-child(3){
+                top:24px;
+                transform: rotate(-45deg)
+            }
+        }
+        }
+        .navigate{
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
         }
     }
 }
@@ -97,7 +130,7 @@
     height: 100%;
     z-index: 555;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #000;
     transition:  0.5s ease-in-out;
 
     .sidebar_wrapper{
@@ -109,12 +142,11 @@
 
             ul{
                 li{
-                    margin-bottom: 10px;
+                    margin-bottom: 18px;
                     
                     a{
                         color: #FFF;
-                        font-size: 24px;
-                        font-family: 'Nanum Gothic', sans-serif;
+                        font-size: 17px;
                         text-transform: capitalize;
 
                         svg{
@@ -128,7 +160,6 @@
                         a{
                             color: #FFF;
                             font-size: 24px;
-                            font-family: 'Nanum Gothic', sans-serif;
                             text-transform: capitalize;
     
                             svg{
@@ -140,23 +171,32 @@
                 }
             }
         }
+    }
 
-        .sidebar_bottom{
-            position: absolute;
-            bottom: 92px;
-            width: 150px;
-            height: 33px;
-            left: 70px;
-            cursor: pointer;
-            
-            p{
+    &.sidebar_hidden{
+        left: 0px;
+    }
+
+    .sidebar_bottom{
+        position: absolute;
+        bottom: 125px;
+        width: 150px;
+        height: 33px;
+        left: 70px;
+        cursor: pointer;
+        
+     ul{
+
+        li{
+            a{
                 color: #FFF;
-                font-size: 18px;
-                font-family: 'Noto Sans TC';
+                font-size: 15px;
                 text-transform: capitalize;
                 margin-bottom: 10px;
                 display: flex;
                 align-items: center;
+                white-space: nowrap;
+                font-weight: 500;
 
                 svg{
                     fill: #fff;
@@ -165,12 +205,12 @@
                     margin-top: 3px;
                 }
             }
+
+            .icons{
+                display: flex;
+            }
         }
+     }
     }
-
-    &.sidebar_hidden{
-        left: 0px;
-
-        
-    }
+   
 }
