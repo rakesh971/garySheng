@@ -1005,7 +1005,7 @@
 
 						.details{
 							text-align: center;
-							margin-bottom: 20px;
+							margin-bottom: 30px;
 		
 							h2{
 								color: #333;
@@ -1016,7 +1016,7 @@
 								margin: 0px;
 								display: inline-block;
 								line-height: 32px;
-
+								text-transform: capitalize;
 		
 								&::before{
 									content: "";
