@@ -292,8 +292,7 @@ export default function Home({work,featured,conntact}) {
 													</Link> 
 												</h3>
 												<h6>
-													<span>Senior Executive/Marketing,</span>
-													March 2019 - September 2019.
+													Senior Executive/Marketing,March 2019 - September 2019.
 												</h6>
 												<div className={styles.details_block}>
 													<p className={styles.location}>Hyderabad</p>
@@ -356,8 +355,7 @@ export default function Home({work,featured,conntact}) {
 													</Link> 
 												</h3>
 												<h6>
-													<span>Marketing and Operations Manager,</span>
-													July 2018 - February 2019.
+													Marketing and Operations Manager, July 2018 - February 2019.
 												</h6>
 												<div className={styles.details_block}>
 													<p className={styles.location}>
@@ -388,8 +386,7 @@ export default function Home({work,featured,conntact}) {
 													</Link> 
 												</h3>
 												<h6>
-													<span>Communication and Community Manager,</span>
-													 June 2017 - July 2018.
+													Communication and Community Manager,June 2017 - July 2018.
 												</h6>
 												<div className={styles.details_block}>
 													<p className={styles.location}>
@@ -426,8 +423,7 @@ export default function Home({work,featured,conntact}) {
 													</Link> 
 												</h3>
 												<h6>
-													<span>Marketing/ Business Development</span>
-													January 2016 - February 2017
+													Marketing/ Business Development January 2016 - February 2017
 												</h6>
 												<div className={styles.details_block}>
 													<p className={styles.location}>
@@ -478,9 +474,7 @@ export default function Home({work,featured,conntact}) {
 													</Link> 
 												</h3>
 												<h6>
-													<span>Customer Service Associate</span>
-													
-														September 2015 to October 2016
+													Customer Service Associate September 2015 to October 2016
 													
 												</h6>
 												<div className={styles.details_block}>
@@ -592,6 +586,47 @@ export default function Home({work,featured,conntact}) {
 													</div>
 												</div>
 											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className={styles.system} id="random">
+						<div className={styles.system_image}>
+							<div className='contain'>
+								<div className={styles.system_block}>
+									<div className={styles.details}>
+										<h2>
+											Random things about me
+										</h2>
+									</div>
+									<div className={styles.random_container}>
+										<div className={styles.middle}>
+											<img src="/assets/images/694afe77-02e9-4ab1-940a-b85a1ec9fd38.jpg"/>
+										</div>
+										<div className={styles.left_bar}>
+											<p><span></span>The best thing to do in any tough situation is to smile and move on. </p>
+											<p><span></span>Be human, be gentle with others and try to be the reason of their smile. </p>
+											<p><span></span>I’m addicted to technology and I am a melomaniac.</p>
+											<p><span></span>I love the human brain and I am trying to learn neuroscience. </p>
+											<p><span></span>According to my friends I argue(Healthy) a lot, a lot is too less in my dictionary. </p>
+											<p><span></span>I am constantly trying to learn the “Art” of saying “No” and I fail at it. It’s a problem. </p>
+											<p><span></span>I am a health freak and I consistently fail in understanding that term. </p>
+											<p><span></span>Ronald, not Messi. </p>
+											<p><span></span>Hamilton, not Max Verstappen </p>
+										
+										</div>
+										<div className={styles.left_bar}>
+											<p><span></span>I love trucker and baseball caps and I have a lot of them. </p>
+											<p><span></span>I don’t like reading books but can’t stop buying them to make reading a habit. </p>
+											<p><span></span>I don’t believe in afterlife. </p>
+											<p><span></span>I looooooove reading, listening, watching about time travel, black holes, exoplanets, and the concept of parallel universe</p>
+											<p><span></span>I love listening to podcasts and can binge listen to them for the whole day. </p>
+											<p><span></span>Bollywood, not Hollywood(with some exceptions)</p>
+											<p><span></span>Does that make me look less smarter?</p>
+											<p><span></span>Hit me up for a conversation here!</p>
+											<p><span></span>Peace</p>
 										</div>
 									</div>
 								</div>

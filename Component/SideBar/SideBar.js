@@ -51,7 +51,7 @@ const SideBar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/random">
+                            <Link href="#random">
                                 <a>
                                  Random Things
                                 </a>

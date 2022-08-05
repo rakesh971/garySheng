@@ -16,6 +16,7 @@
 		.header{
 
 			.hamberg{
+
 				.hamberg_menu{
 					top: 36px;
 					left: 70px;
@@ -94,25 +95,9 @@
 				margin-bottom: 40px;
 				position: relative;
 
-				// &:before{
-				// 	transform-style: preserve-3d;
-				// 	background: #1469e9;
-				// 	position: absolute;
-				// 	top:0px;
-				// 	bottom: 0px;
-				// 	left: 0px;
-				// 	right: 0px;
-				// 	content: "";
-				// 	display: inline-block;
-				// }
-
 				.about_me{
 					position: relative;
 					height: 270px;
-					// display: flex;
-					// align-items: center;
-					// justify-content: center;
-					// flex-direction: column;
 
 					.about_background{
 						color: #fff;
@@ -189,7 +174,7 @@
 					h1{
 						font-size: 59px;
 						font-weight: 700;
-						color: #333;
+						color: #0d0c22;
 						line-height:50px;
 						word-wrap:break-word;
 						margin-bottom: 25px;
@@ -214,7 +199,7 @@
 				margin: 60px 0px;
 
 				@include mobile{
-					margin: 30px 0px;
+					margin:0px;
 				}
 
 				.journey_block{
@@ -222,6 +207,7 @@
 					.details{
 						display: flex;
 						justify-content: center;
+						margin-bottom: 30px;
 
 						h2{
 							color: #333;
@@ -231,11 +217,6 @@
 							text-align: center;
 							margin: 0px;
 							display: inline-block;
-
-							@include mobile{
-								margin-bottom: 30px;
-							}
-
 
 							&::before{
 								content: "";
@@ -284,34 +265,33 @@
 					}
 
 					.journey_info{
-					
+
 						.journey_sections{
 							display: flex;
-							padding:40px 0px;
+							padding-bottom:40px;
 							align-items: flex-start;
 							margin-bottom: 0px;
 
 							@include mobile{
 								flex-direction: column;
 								justify-content: center;
-								padding: 0px;
+								padding-bottom:30px;
 								align-items: center;
-								margin:20px 0px;
-							}
-							@include xs {
-								margin:30px  0px;
+
+								&:nth-child(1){
+									padding-top: 20px;
+								}
 							}
 
 							.unplugged_image{
-								flex: 0.4;
-								margin: 0px 14px;
 								justify-content: flex-end;
 								display: flex;
 								cursor: pointer;
+								margin-right: 40px;
 
 								@include mobile{
-									// width:100%;
-									margin-bottom: 15px;
+									margin: 0px;
+									margin-bottom: 20px;
 								}
 								
 								&.center_image{
@@ -340,8 +320,6 @@
 		
 							.journey_text{
 								flex: 1;
-								padding-left: 19px;
-								margin: 0px 14px;
 
 								@include mobile{
 									width:100%;
@@ -355,6 +333,8 @@
 										color: #333;
 										font-size: 22px;
 										font-weight: 700;
+										line-height: 22px;
+										margin-bottom: 2px;
 
 										@include mobile{
 											font-size: 18px;
@@ -369,7 +349,7 @@
 									h6{
 										font-size: 17px;
 										color: #0189e9;
-										margin-bottom: 8px;
+										margin-bottom: 4px;
 										font-weight: 400;
 
 										@include mobile{
@@ -382,9 +362,8 @@
 										color: #50555c;
 
 										.location{
-											margin-bottom: 20px;
-											line-height: 8px;
 											font-weight: 500;
+											margin-bottom: 12px;
 
 											a{
 												word-break: break-word;
@@ -397,9 +376,13 @@
 
 											p{
 												font-size: 17px;
-												margin-bottom: 16px;
+												margin-bottom: 14px;
 												font-weight: 400;
 												line-height: 1.5;
+
+												&:nth-last-child(1){
+													margin-bottom: 0px;
+												}
 
 												span{
 													display: inline-block;
@@ -414,16 +397,20 @@
 											}
 											ul{
 												margin: 15px 0px;
+												margin-bottom: 0px;
 												padding-left: 30px;
 
 												li{
 													font-style: italic;
 													font-weight: 500;
-													line-height: 22px;
 													list-style-type: disc;
 													font-size: 17px;
-													margin-bottom: 16px;
+													margin-bottom: 14px;
 													line-height: 1.5;
+
+													&:nth-last-child(1){
+														margin: 0px;
+													}
 
 													a{
 														color: #37c;
@@ -466,7 +453,7 @@
 
 						.details{
 							align-items: center;
-							margin-bottom: 20px;
+							margin-bottom: 30px;
 							display: flex;
 							flex-direction: column;
 		
@@ -478,7 +465,6 @@
 								text-align: center;
 								margin: 0px;
 								display: inline-block;
-								margin-bottom: 12px;
 		
 								&::before{
 									content: "";
@@ -695,6 +681,7 @@
 							display: flex;
 							justify-content: space-between;
 							position: relative;
+							padding-bottom: 40px;
 
 							@include mobile{
 								align-items: center;
@@ -704,11 +691,11 @@
 
 							.card_box{
 								width: calc(50% - 20px);
-								margin: 14px 10px;
+								margin: 0px 10px;
 
 								@include mobile{
 									width: 300px;
-									margin:14px 0px;
+									margin:20px 0px;
 								}
 
 								.card{
@@ -888,17 +875,133 @@
 			}	
 			
 			.system{
-				padding: 40px 0px;
+				margin: 60px 0px;
 
 				.system_image{
-					// background-image: url(//custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/9621/a4011e77-0e25-416f-ab13-d3840a5664e3_kssoov.jpg);
-					// background-repeat: no-repeat;
-					// background-size: cover;
-					// position: relative;
-					// padding: 80px 0px;
-					// background-position: 50% 50%;
 
 					.system_block{
+						padding-bottom: 40px;
+
+						.random_container{
+							display: flex;
+							justify-content: space-between;
+							flex: 1;
+
+							@include mobile{
+								flex-direction: column;
+								justify-content: center;
+								align-items: center;
+							}
+				
+							.middle{
+								flex: 0.3;
+								// display: flex;
+								// align-items: center;
+								// justify-content: center;
+								
+								img{
+									width:250px;
+									height: 250px;
+									object-fit: contain;
+									box-shadow: 0px 5px 5px 5px #dedede2b;
+									border-radius: 50%;
+
+									@include tab{
+										width: 200px;
+										height: 200px;
+									}
+
+									@include mobile{
+										margin-bottom: 40px;
+									}
+								}
+							}
+				
+							.left_bar{
+								display: flex;
+								flex-direction: column;
+								flex: 0.35;
+
+								@include mobile{
+									&:nth-last-child(1){
+										p{
+											&:nth-last-child(1){
+												margin-bottom: 0px;
+											}
+										}
+									}
+								}
+				
+								p{
+									font-size: 13px;
+									font-weight: 400;
+									line-height: 1.8;
+									color: #50555c;
+									position: relative;
+									padding-left:20px;
+									min-height: 100px;
+									margin-bottom: 20px;
+									display: flex;
+									align-items: center;
+
+									@include sm{
+										min-height: 65px;
+										margin-bottom: 10px;
+									}
+				
+									&:nth-child(2n){
+				
+										span{
+											border:3px solid #6bbb77;
+										}
+				
+										&::before{
+											border-image: 
+												linear-gradient(
+													to bottom, 
+													#6bbb77, 
+													rgba(0, 0, 0, 0)
+												) 1 100%;
+										}
+									}
+				
+									span{
+										border: 3px solid #f78758;
+										width: 10px;
+										height: 10px;
+										border-radius: 50%;
+										display: inline-block;
+										position: absolute;
+										left: -2px;
+										top:0px;
+				
+									}
+				
+									&::before{
+										content:"";
+										display: block;
+										position: absolute;
+										left:2px;
+										top:15px;
+										height:calc(100% - 20%);
+										color: white;
+										border-width: 0.5px;
+										border-style: solid;
+										border-image: 
+										  linear-gradient(
+											to bottom, 
+											#f78758, 
+											rgba(0, 0, 0, 0)
+										  ) 1 100%;
+
+										  @include sm{
+											height: calc(100% - 40%);
+										  }
+									}
+								}
+							}
+				
+						}
 
 						.details{
 							text-align: center;
@@ -912,6 +1015,8 @@
 								text-align: center;
 								margin: 0px;
 								display: inline-block;
+								line-height: 32px;
+
 		
 								&::before{
 									content: "";
@@ -976,6 +1081,7 @@
 								
 								@include mobile{	
 									flex-direction: column;
+									margin-top: 30px;
 								}
 
 								li{
@@ -983,7 +1089,7 @@
 									padding-bottom: 10px;
 									line-height: 1.45;
 									color: #333;
-									font-size: 20px;
+									font-size: 18px;
 									font-weight: 400;
 									text-align: left;
 									width:50%;
@@ -1001,34 +1107,40 @@
 										letter-spacing: inherit;
 									}
 
-									@include sm {
-										font-size: 18px;
+									@include xs{
+										font-size: 14px;
+										font-weight: 500;
 									}
 
 									span{
-										
 										margin-right: 8px;
 
 										@include tab{
 											margin-right: 4px;
 										}
 
-										@include sm {
-											margin-right: 4px;
-										}
-
 										img{
 											object-fit: cover;
-											width: 18px;
-											height: 18px;
+											width: 14px;
+											height: 14px;
+
+											@include xs{
+												width: 13px;
+												height: 13px;
+											}
 										}
 
 										&:nth-last-child(1){
 											img{
-												width:14px;
-												height: 14px;
+												width:12px;
+												height: 12px;
 												object-fit: cover;
-												opacity: 0.5;
+												opacity: 0.7;
+
+												@include xs{
+													width: 11px;
+													height: 11px;
+												}
 											}
 										}
 									}
@@ -1042,12 +1154,11 @@
 						}
 		
 					}
+
 				}
 			}
 
 			.freelance{
-				padding: 80px 0px;
-				// background-color: #fff;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -1058,25 +1169,23 @@
 
 					.coast{
 
-						width: 60%;
-						margin: auto;
-
 						@include mobile{
 							width: 100%;
 						}
 
 						h2{
 							color: #333;
-							font-size: 40px;
+							font-size: 32px;
 							font-weight: 500;
 							position: relative;
 							margin: 0px;
-							margin-bottom: 12px;
 							line-height: 48px;
+							margin-bottom: 30px;
 
 							@include mobile{
 								margin-bottom: 25px;
 								font-size: 24px;
+								line-height: 32px;
 							}
 						
 
@@ -1125,13 +1234,9 @@
 					}	
 
 						p{
-							color: #678;
-							font-size: 24px;
-							font-weight: 400;
 							position: relative;
 							text-align: center;
 							margin: 0px;
-							line-height: 1.45;
 							margin-bottom: 12px;
 							line-height: 1.45;
 							font-size: 20px;
