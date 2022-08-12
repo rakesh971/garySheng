@@ -34,13 +34,11 @@ export default function Home({work,featured,conntact}) {
 					<div className={styles.about} >
 						<div className='contain'>
 							<div className={styles.about_me}>
-								<div className={styles.profile_image}>
-									<Link href="">
-										<a>
-											<img src="/assets/images/profile.jpg"/>
-										</a>
-									</Link>
-								</div>
+								<Link href="">
+									<a className={styles.profile_image}>
+										<img src="/assets/images/profile.jpg"/>
+									</a>
+								</Link>
 							</div>	
 						</div>
 					</div>
@@ -73,8 +71,10 @@ export default function Home({work,featured,conntact}) {
 											<Link href="https://www.techstars.com/communities/startup-weekend">
 												<a target="_blank">
 													<img src ="/assets/images/startUp.jpg"/>
+													
 												</a>
 											</Link>
+											<span>2015 - Present</span>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -112,8 +112,6 @@ export default function Home({work,featured,conntact}) {
 											</div>	
 										</div>
 									</div>
-								</div>
-								<div className={styles.journey_info}>
 									<div className={styles.journey_sections}>
 										<div className={styles.unplugged_image}>
 											<Link href="">
@@ -121,6 +119,7 @@ export default function Home({work,featured,conntact}) {
 													<img src ="/assets/images/geek.jpg"/>
 												</a>
 											</Link>
+											<span>2012 - 2015</span>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -190,12 +189,13 @@ export default function Home({work,featured,conntact}) {
 								</div>
 								<div className={styles.journey_info}>
 									<div className={styles.journey_sections}>
-										<div className={styles.unplugged_image}>,
+										<div className={styles.unplugged_image}>
 											<Link href="https://www.onblick.com/">
 												<a>
 													<img src ="/assets/images/1_jeQVI7MsQT8S6zdZOEmc1Q.png"/>
 												</a>
 											</Link>
+											<span>2020 - 2022</span>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -281,6 +281,7 @@ export default function Home({work,featured,conntact}) {
 													<img src ="/assets/images/magna.jpg"/>
 												</a>
 											</Link>
+											<span>2019 - 2019</span>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -344,6 +345,7 @@ export default function Home({work,featured,conntact}) {
 													<img src ="/assets/images/images (1).png"/>
 												</a>
 											</Link>
+											<span>2018 - 2019</span>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -375,6 +377,7 @@ export default function Home({work,featured,conntact}) {
 													<img src ="/assets/images/8c68d411-9eef-45cf-bd4c-635fd833de8d.jpg"/>
 												</a>
 											</Link>
+											<span>2017 - 2018</span>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -412,6 +415,7 @@ export default function Home({work,featured,conntact}) {
 													<img src ="/assets/images/aa3c4f0f-6a10-4401-8013-5e6260d9764f.jpg"/>
 												</a>
 											</Link>
+											<span>2016 - 2017</span>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -463,6 +467,7 @@ export default function Home({work,featured,conntact}) {
 													<img src ="/assets/images/amazon.jpg"/>
 												</a>
 											</Link>
+											<span>2015 - 2016</span>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -508,6 +513,7 @@ export default function Home({work,featured,conntact}) {
 													<img src ="/assets/images/grey.jpg"/>
 												</a>
 											</Link>
+											<span>2015 - 2018</span>
 										</div>
 										<div className={styles.journey_text}>
 											<div className={styles.basic_info}>
@@ -625,7 +631,6 @@ export default function Home({work,featured,conntact}) {
 											<p><span></span>I love listening to podcasts and can binge listen to them for the whole day. </p>
 											<p><span></span>Bollywood, not Hollywood(with some exceptions)</p>
 											<p><span></span>Does that make me look less smarter?</p>
-											<p><span></span>Hit me up for a conversation here!</p>
 											<p><span></span>Peace</p>
 										</div>
 									</div>
@@ -645,9 +650,6 @@ export default function Home({work,featured,conntact}) {
 									<div className={styles.system_content}>
 										<ul>
 											<li>
-												<span>
-													<img src="/assets/images/2696555.png"/>
-												</span>
 												<Link href="https://insighttimer.com/blog/how-to-be-humble/">
 													<a target="_blank">
 														<span>Stay Humble</span>
@@ -658,9 +660,6 @@ export default function Home({work,featured,conntact}) {
 												</Link>
 											</li>
 											<li>
-												<span>
-													<img src="/assets/images/2696555.png"/>
-												</span>
 												<Link href="https://cdn2.hubspot.net/hubfs/2602672/Imported_Blog_Media/Customer_Is_King_Infographic.jpg" >
 													<a target="_blank" >
 														<span>Customer is king</span>
@@ -671,9 +670,6 @@ export default function Home({work,featured,conntact}) {
 												</Link>
 											</li>
 											<li>
-												<span>
-													<img src="/assets/images/2696555.png"/>
-												</span>
 												<Link href="https://jackcanfield.com/blog/how-to-believe-in-yourself">
 													<a target="_blank" >
 														<span>Believe in change</span>
@@ -684,11 +680,7 @@ export default function Home({work,featured,conntact}) {
 												</Link>
 												
 											</li>
-											
 											<li>
-												<span>
-													<img src="/assets/images/2696555.png"/>
-												</span>
 												<Link href="https://www.bondora.com/blog/beyond-finance-why-you-should-also-invest-in-yourself">
 													<a target="_blank" >
 														<span>Invest in yourself</span>
@@ -699,9 +691,6 @@ export default function Home({work,featured,conntact}) {
 												</Link>
 											</li>
 											<li>
-												<span>
-													<img src="/assets/images/2696555.png"/>
-												</span>
 												<Link href="https://medium.com/publishous/learn-to-laugh-at-your-problems-2486e8ae3b12">
 													<a target="_blank">
 														<span>Laugh out at your problems</span>
@@ -712,9 +701,6 @@ export default function Home({work,featured,conntact}) {
 												</Link>
 											</li>
 											<li>
-												<span>
-													<img src="/assets/images/2696555.png"/>
-												</span>
 												<Link href="https://medium.com/@twoguyswhoblog/dont-take-life-too-seriously-two-guys-who-blog-1f224fd21c86">
 													<a target="_blank">
 														<span>Don’t take yourself too seriously.</span>
@@ -725,9 +711,6 @@ export default function Home({work,featured,conntact}) {
 												</Link>
 											</li>
 											<li>
-												<span>
-													<img src="/assets/images/2696555.png"/>
-												</span>
 												<Link href="https://www.minimalismmadesimple.com/home/spread-happiness/">
 													<a target="_blank">
 														<span>Spread happiness the world needs it.</span>
@@ -738,9 +721,6 @@ export default function Home({work,featured,conntact}) {
 												</Link>
 											</li>
 											<li>
-												<span>
-													<img src="/assets/images/2696555.png"/>
-												</span>
 												<Link href="https://www.goodtherapy.org/blog/to-live-your-truth-start-by-being-honest-with-yourself-0815194/amp/">
 													<a target="_blank">
 														<span>The most important be honest and genuine.</span>
@@ -784,7 +764,7 @@ export default function Home({work,featured,conntact}) {
 										<a>
 											Twitter
 										</a>
-									</Link>
+									</Link>,
 									<Link href="https://www.linkedin.com/in/smitheshpalparthy/">
 										<a>
 											LinkedIn
